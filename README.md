@@ -2,7 +2,7 @@
 <img src="https://i.postimg.cc/CLzRsx7Q/TKP-Banner.jpg" alt="banner">
 <table border=0>
 	<tr>
-		<td colspan=2>Data Diri</td>
+		<td colspan=2><center>Data Diri</center></td>
 	</tr>
 	<tr>
 		<td>Nama</td>
