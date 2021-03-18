@@ -2,7 +2,7 @@
 <img src="https://i.postimg.cc/CLzRsx7Q/TKP-Banner.jpg" alt="banner">
 <table border=0>
 	<tr>
-		<td colspan=2 align="center">Data Diri</td>
+		<td colspan=2 align="center"><b>Data Diri</b></td>
 	</tr>
 	<tr>
 		<td><b>Nama</b></td>
@@ -17,7 +17,7 @@
 		<td>Teknologi Informasi</td>
 	</tr>
 	<tr>
-		<td><b<Prodi</b></td>
+		<td><b>Prodi</b></td>
 		<td>Teknik Informatika</td>
 	</tr>
 	<tr>
