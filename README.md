@@ -1,6 +1,9 @@
-# Tugas Kuliah
+## Tugas Kuliah
 <img src="https://i.postimg.cc/CLzRsx7Q/TKP-Banner.jpg" alt="banner">
 <table border=0>
+	<tr>
+		<td colspan=2>Data Diri</td>
+	</tr>
 	<tr>
 		<td>Nama</td>
 		<td>Taufik Hidayat</td>
@@ -23,7 +26,7 @@
 	</tr>
 </table>
 
-## Daftar Isi
+### Daftar Isi
 
 <ul>
 	<li><a href="https://github.com/tfkhdyt/tugas-kuliah/tree/main/Semester%202">Semester 2</a></li>
