@@ -2,26 +2,26 @@
 <img src="https://i.postimg.cc/CLzRsx7Q/TKP-Banner.jpg" alt="banner">
 <table border=0>
 	<tr>
-		<td colspan=2><center>Data Diri</center></td>
+		<td colspan=2 align="center">Data Diri</td>
 	</tr>
 	<tr>
-		<td>Nama</td>
+		<td><b>Nama</b></td>
 		<td>Taufik Hidayat</td>
 	</tr>
 	<tr>
-		<td>NIM</td>
+		<td><b>NIM</b></td>
 		<td>301200032</td>
 	</tr>
 	<tr>
-		<td>Fakultas</td>
+		<td><b>Fakultas</b></td>
 		<td>Teknologi Informasi</td>
 	</tr>
 	<tr>
-		<td>Prodi</td>
+		<td><b<Prodi</b></td>
 		<td>Teknik Informatika</td>
 	</tr>
 	<tr>
-		<td>Per. Tinggi</td>
+		<td><b>Per. Tinggi</b></td>
 		<td>Universitas Bale Bandung</td>
 	</tr>
 </table>
