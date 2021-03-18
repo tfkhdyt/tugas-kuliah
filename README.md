@@ -1,12 +1,10 @@
 # Tugas Kuliah
 
-<pre><pre>
-</pre>Nama         : Taufik Hidayat<br>
+Nama         : Taufik Hidayat<br>
 NIM          : 301200032<br>
 Fakultas     : Teknologi Informasi<br>
 Prodi        : Teknik Informatika<br>
 Perg. Tinggi : Universitas Bale Bandung<br>
-</pre>
 
 ## Daftar Isi
 
