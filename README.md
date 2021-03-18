@@ -3,23 +3,23 @@
 <table border=0>
 	<tr>
 		<td>Nama</td>
-		<td>: Taufik Hidayat</td>
+		<td>Taufik Hidayat</td>
 	</tr>
 	<tr>
 		<td>NIM</td>
-		<td>: 301200032</td>
+		<td>301200032</td>
 	</tr>
 	<tr>
 		<td>Fakultas</td>
-		<td>: Teknologi Informasi</td>
+		<td>Teknologi Informasi</td>
 	</tr>
 	<tr>
 		<td>Prodi</td>
-		<td>: Teknik Informatika</td>
+		<td>Teknik Informatika</td>
 	</tr>
 	<tr>
 		<td>Per. Tinggi</td>
-		<td>: Universitas Bale Bandung</td>
+		<td>Universitas Bale Bandung</td>
 	</tr>
 </table>
 
