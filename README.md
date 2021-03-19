@@ -36,7 +36,7 @@
 </table>
 
 ### Daftar Isi
-
+---
 <ul>
 	<li>
 		<a href="https://github.com/tfkhdyt/tugas-kuliah/tree/main/Semester%202">Semester 2</a>&nbsp;|
