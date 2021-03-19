@@ -36,17 +36,14 @@
 </table>
 
 ### Daftar Isi
-<details>
+
 <ul>
-<summary>
 	<li>
 		<a href="https://github.com/tfkhdyt/tugas-kuliah/tree/main/Semester%202">Semester 2</a>&nbsp;|
 		<a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tfkhdyt/tugas-kuliah/tree/main/Semester%202">
 			<b>Download</b>
 		</a>
 	</li>
-</summary>
-
 	<ul>
 		<li><a href="https://github.com/tfkhdyt/tugas-kuliah/tree/main/Semester%202/Praktikum%20Pengantar%20Pemrograman%20(Pak%20Ojan)">Pengantar Praktikum Pemrograman</a>&nbsp;|
 		<a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tfkhdyt/tugas-kuliah/tree/main/Semester%202/Praktikum%20Pengantar%20Pemrograman%20(Pak%20Ojan)">
@@ -55,4 +52,3 @@
 		</li>
 	</ul>
 </ul>
-</details>
