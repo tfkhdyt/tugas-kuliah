@@ -44,8 +44,18 @@
 			<b>Download</b>
 		</a>
 	</li>
+	<ul>
+		<li>
+			<a href="https://github.com/tfkhdyt/tugas-kuliah/tree/main/Semester%201/Algoritma%20%26%20Pemrograman%20(Pak%20Yudi%20%26%20Pak%20Cecep)">Algoritma & Pemrograman</a> |
+			<a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tfkhdyt/tugas-kuliah/tree/main/Semester%201/Algoritma%20%26%20Pemrograman%20(Pak%20Yudi%20%26%20Pak%20Cecep)"><b>Download</b></a>
+		</li>
+		<li>
+			<a href="https://github.com/tfkhdyt/tugas-kuliah/tree/main/Semester%201/Pengantar%20Java%20(Pak%20Yusuf%20%26%20Pak%20Ridwan)">Pengantar Java</a> |
+			<a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tfkhdyt/tugas-kuliah/tree/main/Semester%201/Pengantar%20Java%20(Pak%20Yusuf%20%26%20Pak%20Ridwan)"><b>Download</b></a>
+		</li>
+	</ul>
 	<li>
-		<a href="https://github.com/tfkhdyt/tugas-kuliah/tree/main/Semester%202">Semester 2</a>&nbsp;|
+		<a href="https://github.com/tfkhdyt/tugas-kuliah/tree/main/Semester%202">Semester 2</a> |
 		<a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tfkhdyt/tugas-kuliah/tree/main/Semester%202">
 			<b>Download</b>
 		</a>
