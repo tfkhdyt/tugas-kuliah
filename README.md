@@ -8,7 +8,7 @@
 <a href="https://t.me/tfkhdyt"><img height="30" src="https://cdn4.iconfinder.com/data/icons/social-media-2146/512/37_social-512.png"></a>&nbsp;
 <a href="https://open.spotify.com/playlist/4JR5wqcnuOQw6ppF38Vpu9?si=zHMKBfCiRrGVamKsL8LXqQ"><img height="30" src="https://cdn2.iconfinder.com/data/icons/social-icons-33/128/Spotify-512.png"></a>
 </p>
-<center>
+<p align=center>
 <table border=0>
 	<tr>
 		<td colspan=2 align="center"><b>Data Diri</b></td>
@@ -34,7 +34,7 @@
 		<td>Universitas Bale Bandung</td>
 	</tr>
 </table>
-</center>
+</p>
 
 ### Daftar Isi
 <a href="https://github.com/tfkhdyt/tugas-kuliah/archive/refs/heads/main.zip"><b>Download All</b></a>
