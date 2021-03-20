@@ -61,6 +61,11 @@
 		</a>
 	</li>
 	<ul>
+		<li><a href="https://github.com/tfkhdyt/tugas-kuliah/tree/main/Semester%202/Algoritma%20%26%20Pemrograman%202%20(Pak%20Yudi)">Algoritma & Pemrograman 2</a> |
+		<a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tfkhdyt/tugas-kuliah/tree/main/Semester%202/Algoritma%20%26%20Pemrograman%202%20(Pak%20Yudi)">
+			<b>Download</b>
+		</a>
+		</li>
 		<li><a href="https://github.com/tfkhdyt/tugas-kuliah/tree/main/Semester%202/Praktikum%20Pengantar%20Pemrograman%20(Pak%20Ojan)">Pengantar Praktikum Pemrograman</a>&nbsp;|
 		<a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tfkhdyt/tugas-kuliah/tree/main/Semester%202/Praktikum%20Pengantar%20Pemrograman%20(Pak%20Ojan)">
 			<b>Download</b>
