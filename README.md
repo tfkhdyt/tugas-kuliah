@@ -9,7 +9,7 @@
 <a href="https://open.spotify.com/playlist/4JR5wqcnuOQw6ppF38Vpu9?si=zHMKBfCiRrGVamKsL8LXqQ"><img height="30" src="https://cdn2.iconfinder.com/data/icons/social-icons-33/128/Spotify-512.png"></a>
 </p>
 <p align=center>
-<table border=0>
+<table width="75%" align="center">
 	<tr>
 		<td colspan=2 align="center"><b>Data Diri</b></td>
 	</tr>
