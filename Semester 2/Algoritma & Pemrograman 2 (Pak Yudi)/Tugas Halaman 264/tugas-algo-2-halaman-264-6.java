@@ -19,8 +19,8 @@ class Jam {
       detikNew = timeS % 60;
     }
     
-    System.out.println("\n" + jam + ":" + menit + ":" + detik + " - " + p + " menit");
-    System.out.println("Hasil : "+ jamNew + ":" + menitNew + ":" + detikNew);
+    System.out.printf("\n%02d:%02d:%02d - %d menit",jam,menit,detik,p);
+    System.out.printf("\nHasil : %02d:%02d:%02d",jamNew,menitNew,detikNew);
   }
 
   public static void main(String[] args) {
