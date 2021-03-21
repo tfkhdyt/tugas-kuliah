@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.Arrays;
 
  // Compiler version JDK 11.0.2
 
@@ -21,7 +22,7 @@ import java.util.Scanner;
          lokasi = i+1;
        }
      }
-     System.out.println();
+     System.out.println("\n"+Arrays.toString(array));
      System.out.println("Nilai minimumnya adalah = "+minimum);
      System.out.println("Berada di elemen ke-"+lokasi);
    }
