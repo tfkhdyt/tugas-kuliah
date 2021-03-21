@@ -1,38 +1,32 @@
 import java.util.Scanner;
-import java.util.Arrays;
 
  // Compiler version JDK 11.0.2
 
  class Minimum
  {
-   static void hitungMin(int jumlah){
-     int array[], elemen, minimum, lokasi = 0;
-     array = new int[jumlah];
-     System.out.println("\nMasukkan " + jumlah + " angka");
-     for(int i = 0; i < jumlah; i++){
-       Scanner in = new Scanner(System.in);
-       System.out.print("Masukkan elemen ke-"+(i+1)+" : ");
-       elemen = in.nextInt();
-       array[i] = elemen;
-     }
-     minimum = array[0];
-     for(int i = 0; i < jumlah; i++){
-       if(array[i] < minimum){
-         minimum = array[i];
-         lokasi = i+1;
+   static void hitungMin(int angka){
+     int min;
+     Scanner in = new Scanner(System.in);
+     min = angka; 
+     System.out.print("Masukkan angka = ");
+     angka = in.nextInt();
+     while(angka != 9999){
+       if(angka < min){
+         min = angka;
        }
+        System.out.print("Masukkan angka = ");
+        angka = in.nextInt();
      }
-     System.out.println("\n"+Arrays.toString(array));
-     System.out.println("Nilai minimumnya adalah = "+minimum);
-     System.out.println("Berada di elemen ke-"+lokasi);
+
+     System.out.println("\nNilai minimumnya adalah = "+min);
    }
    
    public static void main(String args[])
    { 
     Scanner in = new Scanner(System.in);
-    System.out.print("Masukkan jumlah elemen : ");
-    int jumlah = in.nextInt();
+    System.out.print("Masukkan angka = ");
+    int angka = in.nextInt();
     
-    hitungMin(jumlah);
+    hitungMin(angka);
    }
  }
