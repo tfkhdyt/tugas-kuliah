@@ -73,7 +73,7 @@ public class angka {
       } else {
         System.out.println("Masukan Tidak Valid(Terlalu besar/kecil)");
       }
-      System.out.print("Masukkan Angka : ");
+      System.out.print("\nMasukkan Angka : ");
       angka = in .nextInt();
     } while (angka != 9999);
   }
