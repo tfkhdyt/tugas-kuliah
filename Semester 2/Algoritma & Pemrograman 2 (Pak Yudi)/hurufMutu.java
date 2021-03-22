@@ -1,50 +1,52 @@
 import java.util.Scanner;
-import java.util.ArrayList;
-
- // Compiler version JDK 11.0.2
-
- class Dcoder
+ class NilaiHuruf
  {
+   static void println(String str){
+     System.out.println(str);
+   }
+   static void print(String str){
+     System.out.print(str);
+   }
+   
    public static void main(String args[])
    { 
     Scanner in = new Scanner(System.in);
-    System.out.println("Masukkan NIM : ");
-    int nim = in.nextInt();
-    System.out.println("Masukkan nama : ");
-    String nama = in.nextLine();
-    System.out.println("Masukkan kelas : ");
-    String kelas = in.nextLine();
-    System.out.println("Masukkan nilai angka : ");
-    int nilaiAngka = in.nextInt();
+    int nim,nilaiAngka;
+    String kelas;
+    String nama = "";
     
-    ArrayList data = new ArrayList();
-    data.add(nim);
-    data.add(nama);
-    data.add(kelas);
-    data.add(nilaiAngka);
+    println("===== Program Penghitung Nilai Huruf =====\n");
+    print("   Masukkan NIM         : ");
+    nim = in.nextInt(); in.nextLine();
+    print("   Masukkan nama        : ");
+    nama = in.nextLine();
+    print("   Masukkan kelas       : ");
+    kelas = in.nextLine();
+    print("   Masukkan nilai angka : ");
+    nilaiAngka = in.nextInt();
+    
     
     String nilaiHuruf = "";
-    
-    if(data.get(3) >= 0 && data.get(3) < 20){
+    if(nilaiAngka >= 0 && nilaiAngka < 20){
       nilaiHuruf = "E";
-    }else if(data.get(3) >= 20 && data.get(3) < 40){
+    }else if(nilaiAngka >= 20 && nilaiAngka < 40){
       nilaiHuruf = "D";
-    }else if(data.get(3) >= 40 && data.get(3) < 60){
+    }else if(nilaiAngka >= 40 && nilaiAngka < 60){
       nilaiHuruf = "C";
-    }else if(data.get(3) >= 60 && data.get(3) < 75){
+    }else if(nilaiAngka >= 60 && nilaiAngka < 75){
       nilaiHuruf = "B";
-    }else if(data.get(3) >= 75 && data.get(3) < 100){
+    }else if(nilaiAngka >= 75 && nilaiAngka <= 100){
       nilaiHuruf = "A";
     }else{
       nilaiHuruf = "Nilai angka tidak valid!";
     }
     
-    data.add(nilaiHuruf);
-    
-    System.out.println("NIM         : " + data[0]);
-    System.out.println("Nama        : " + data[1]);
-    System.out.println("Kelas       : " + data[2]);
-    System.out.println("Nilai Angka : " + data[3]);
-    System.out.println("Nilai Huruf : " + data[4]);
+    println("\n================= Output =================\n");
+    println("   NIM         : " + nim);
+    println("   Nama        : " + nama);
+    println("   Kelas       : " + kelas);
+    println("   Nilai Angka : " + nilaiAngka);
+    println("   Nilai Huruf : " + nilaiHuruf);
+    println("\n==========================================");
   }  
  }
