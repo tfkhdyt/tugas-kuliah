@@ -3,13 +3,8 @@ import java.time.LocalDateTime; // Import the LocalDateTime class
 import java.time.format.DateTimeFormatter; // Import the DateTimeFormatter class
 
 class NomorSebelas {
-  public static void main(String[] args) {
-    Scanner in = new Scanner(System.in);
-    String date, time, comTime;
-    System.out.print("Masukkan Tanggal (dd-MM-yyyy) : ");
-    date = in.next();
-    System.out.print("Masukkan Waktu (hh:mm:ss) : ");
-    time = in.next();
+  static void jam(String date, String time){
+    String comTime;
     comTime = date.substring(6,10)+"-"+date.substring(3,5)+"-"+date.substring(0,2)+"T"+time;
     
     int detik = 0;
@@ -43,6 +38,15 @@ class NomorSebelas {
       }
       
     }
-    
+
+  }
+  public static void main(String[] args) {
+    Scanner in = new Scanner(System.in);
+    String date, time;
+    System.out.print("Masukkan Tanggal (dd-MM-yyyy) : ");
+    date = in.next();
+    System.out.print("Masukkan Waktu (hh:mm:ss) : ");
+    time = in.next();
+    jam(date, time);
   }
 }
