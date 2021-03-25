@@ -14,7 +14,7 @@ import java.util.Scanner;
       System.out.print("Masukkan bilangan : ");
       bil = in.nextInt();
     }
-    System.out.println("\n\nJumlah : " + jumlah);
+    System.out.println("\nJumlah : " + jumlah);
     float rata = jumlah/i;
     System.out.printf("Rata rata : %.2f",rata);
    }
