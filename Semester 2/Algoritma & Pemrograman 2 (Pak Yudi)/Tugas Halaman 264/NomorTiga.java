@@ -2,7 +2,7 @@ import java.util.Scanner;
 
  // Compiler version JDK 11.0.2
 
- class Minimum
+ class NomorTiga
  {
    static void hitungMin(int angka){
      int min;

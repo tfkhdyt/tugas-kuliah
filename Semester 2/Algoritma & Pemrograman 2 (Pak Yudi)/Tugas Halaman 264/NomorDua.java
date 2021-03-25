@@ -2,8 +2,7 @@ import java.util.Scanner;
 
  // Compiler version JDK 11.0.2
 
- class Rata
- {
+ class NomorDua{
    static void hitungRata(int bil){
     int jumlah = 0;
     float i = 0;
@@ -17,7 +16,7 @@ import java.util.Scanner;
     }
     System.out.println("\n\nJumlah : " + jumlah);
     float rata = jumlah/i;
-    System.out.println("Rata rata : " + rata);
+    System.out.printf("Rata rata : %.2f",rata);
    }
    
    public static void main(String args[])

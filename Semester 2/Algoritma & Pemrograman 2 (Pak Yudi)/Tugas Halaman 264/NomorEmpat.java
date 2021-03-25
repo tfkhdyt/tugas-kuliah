@@ -2,7 +2,7 @@ import java.util.Scanner;
 
  // Compiler version JDK 11.0.2
 
- class Minimum
+ class NomorEmpat
  {
    static void hitungUang(int uangAwal, int bunga, int lama){
      int jumlahUang;

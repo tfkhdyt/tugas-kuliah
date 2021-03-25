@@ -2,7 +2,7 @@ import java.util.Scanner;
 
  // Compiler version JDK 11.0.2
 
- class JumlahBilanganGenap
+ class NomorSatu
  {
    static void hitungJumlah(int n){
     int genap = 0;

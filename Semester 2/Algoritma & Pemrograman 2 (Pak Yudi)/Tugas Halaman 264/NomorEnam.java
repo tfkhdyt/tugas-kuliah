@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class Jam {
+class NomorEnam {
   static Scanner in = new Scanner(System.in);
   
   static void mengurangiJam(int jam, int menit, int detik, int p) {

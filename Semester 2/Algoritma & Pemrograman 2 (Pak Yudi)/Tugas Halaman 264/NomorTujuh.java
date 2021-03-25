@@ -1,23 +1,23 @@
 import java.util.Scanner;
 import java.util.Arrays;
 
-class HariKemarin {
+class NomorTujuh {
   static Scanner in = new Scanner(System.in);
   
-  static void hariKemarin(String hari) {
+  static void hariBesok(String hari) {
     hari = hari.substring(0,1).toUpperCase() + hari.substring(1).toLowerCase();
     String[] array = {"Senin","Selasa","Rabu","Kamis","Jumat","Sabtu","Minggu"};
     
     int index = Arrays.asList(array).indexOf(hari);
-    String indexharikemarin = "";
-    if(index == 0){
-      indexharikemarin = array[6];
+    String indexharibesok = "";
+    if(index == 6){
+      indexharibesok = array[0];
     }else{
-      indexharikemarin = array[index - 1];
+      indexharibesok = array[index + 1];
     }
     
-    String harikemarin = indexharikemarin;
-    System.out.printf("\nKemarin adalah hari " + harikemarin);
+    String haribesok = indexharibesok;
+    System.out.print("\nBesok adalah hari " + haribesok);
   }
 
   public static void main(String[] args) {
@@ -25,6 +25,6 @@ class HariKemarin {
     System.out.print("Masukkan hari : ");
     hari = in.nextLine();
     
-    hariKemarin(hari);
+    hariBesok(hari);
   }
 }

@@ -2,7 +2,7 @@ import java.util.Scanner;
 import java.time.LocalDateTime; // Import the LocalDateTime class
 import java.time.format.DateTimeFormatter; // Import the DateTimeFormatter class
 
-public class NomorSebelas {
+class NomorSebelas {
   public static void main(String[] args) {
     Scanner in = new Scanner(System.in);
     String date, time, comTime;

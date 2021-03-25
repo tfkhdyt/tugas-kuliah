@@ -1,8 +1,7 @@
 import java.util.Scanner;
 import java.time.LocalDate;
-import java.time.Period;
 
-public class TanggalKemarin {
+public class NomorSembilan {
    static void tanggalBesok(String date){
       date = date.substring(6)+"-"+date.substring(3,5)+"-"+date.substring(0,2);
       LocalDate tanggal = LocalDate.parse(date);

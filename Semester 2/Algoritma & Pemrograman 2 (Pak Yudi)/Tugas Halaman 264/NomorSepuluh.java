@@ -2,7 +2,7 @@ import java.util.Scanner;
 import java.time.temporal.ChronoUnit;
 import java.time.LocalDate;
 
-public class SelisihTanggal {
+public class NomorSepuluh {
    static void tanggalBesok(String date){
       String dateOld = date;
       date = date.substring(6)+"-"+date.substring(3,5)+"-"+date.substring(0,2);
