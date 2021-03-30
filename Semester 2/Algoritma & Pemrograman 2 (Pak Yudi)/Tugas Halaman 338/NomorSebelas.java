@@ -13,11 +13,11 @@ public class NomorSebelas {
     
     
     for(int i = 0;i < a.length;i++){
-      if(a[i] != a[i + 1]){
-        System.out.print("\nSeluruh isi array tidak sama");
-        break;
-      }else{
+      if(a[i] == a[a.length - 1]){
         System.out.print("\nSeluruh isi array sama");
+        break;
+      }else if(a[i] != a[i + 1]){
+        System.out.print("\nSeluruh isi array tidak sama");
         break;
       }
     }
