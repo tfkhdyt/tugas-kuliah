@@ -38,39 +38,11 @@
 
 ### Daftar Isi
 <a href="https://github.com/tfkhdyt/tugas-kuliah/archive/refs/heads/main.zip"><b>Download All</b></a>
-<ul>
-	<li>
-		<a href="https://github.com/tfkhdyt/tugas-kuliah/tree/main/Semester%201">Semester 1</a> |
-		<a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tfkhdyt/tugas-kuliah/tree/main/Semester%201">
-			<b>Download</b>
-		</a>
-	</li>
-	<ul>
-		<li>
-			<a href="https://github.com/tfkhdyt/tugas-kuliah/tree/main/Semester%201/Algoritma%20%26%20Pemrograman%20(Pak%20Yudi%20%26%20Pak%20Cecep)">Algoritma & Pemrograman</a> |
-			<a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tfkhdyt/tugas-kuliah/tree/main/Semester%201/Algoritma%20%26%20Pemrograman%20(Pak%20Yudi%20%26%20Pak%20Cecep)"><b>Download</b></a>
-		</li>
-		<li>
-			<a href="https://github.com/tfkhdyt/tugas-kuliah/tree/main/Semester%201/Pengantar%20Java%20(Pak%20Yusuf%20%26%20Pak%20Ridwan)">Pengantar Java</a> |
-			<a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tfkhdyt/tugas-kuliah/tree/main/Semester%201/Pengantar%20Java%20(Pak%20Yusuf%20%26%20Pak%20Ridwan)"><b>Download</b></a>
-		</li>
-	</ul>
-	<li>
-		<a href="https://github.com/tfkhdyt/tugas-kuliah/tree/main/Semester%202">Semester 2</a> |
-		<a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tfkhdyt/tugas-kuliah/tree/main/Semester%202">
-			<b>Download</b>
-		</a>
-	</li>
-	<ul>
-		<li><a href="https://github.com/tfkhdyt/tugas-kuliah/tree/main/Semester%202/Algoritma%20%26%20Pemrograman%202%20(Pak%20Yudi)">Algoritma & Pemrograman 2</a> |
-		<a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tfkhdyt/tugas-kuliah/tree/main/Semester%202/Algoritma%20%26%20Pemrograman%202%20(Pak%20Yudi)">
-			<b>Download</b>
-		</a>
-		</li>
-		<li><a href="https://github.com/tfkhdyt/tugas-kuliah/tree/main/Semester%202/Praktikum%20Pengantar%20Pemrograman%20(Pak%20Ojan)">Pengantar Praktikum Pemrograman</a>&nbsp;|
-		<a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tfkhdyt/tugas-kuliah/tree/main/Semester%202/Praktikum%20Pengantar%20Pemrograman%20(Pak%20Ojan)">
-			<b>Download</b>
-		</a>
-		</li>
-	</ul>
-</ul>
+
+- [Semester 1](https://github.com/tfkhdyt/tugas-kuliah/tree/main/Semester%201) | [Download](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tfkhdyt/tugas-kuliah/tree/main/Semester%201)
+	- [Algoritma & Pemrograman 1](https://github.com/tfkhdyt/tugas-kuliah/tree/main/Semester%201/Algoritma%20%26%20Pemrograman%20(Pak%20Yudi%20%26%20Pak%20Cecep)) | [Download](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tfkhdyt/tugas-kuliah/tree/main/Semester%201/Algoritma%20%26%20Pemrograman%20(Pak%20Yudi%20%26%20Pak%20Cecep))
+	- [Pengantar Java](https://github.com/tfkhdyt/tugas-kuliah/tree/main/Semester%201/Pengantar%20Java%20(Pak%20Yusuf%20%26%20Pak%20Ridwan)) | [Download](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tfkhdyt/tugas-kuliah/tree/main/Semester%201/Pengantar%20Java%20(Pak%20Yusuf%20%26%20Pak%20Ridwan))
+- [Semester 2](https://github.com/tfkhdyt/tugas-kuliah/tree/main/Semester%202) | [Download](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tfkhdyt/tugas-kuliah/tree/main/Semester%202)
+	- [Algoritma & Pemrograman 2](https://github.com/tfkhdyt/tugas-kuliah/tree/main/Semester%202/Algoritma%20%26%20Pemrograman%202%20(Pak%20Yudi)) | [Download](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tfkhdyt/tugas-kuliah/tree/main/Semester%202/Algoritma%20%26%20Pemrograman%202%20(Pak%20Yudi))
+	- [Pemrograman Java Lanjutan](https://github.com/tfkhdyt/tugas-kuliah/tree/main/Semester%202/Pemrograman%20Java%20Lanjutan%20(Pak%20Yusuf)) | [Download](https://downgit.github.io/#/home?url=https://github.com/tfkhdyt/tugas-kuliah/tree/main/Semester%202/Pemrograman%20Java%20Lanjutan%20(Pak%20Yusuf))
+	- [Praktikum Pengantar Pemrograman](https://github.com/tfkhdyt/tugas-kuliah/tree/main/Semester%202/Praktikum%20Pengantar%20Pemrograman%20(Pak%20Ojan)) | [Download](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tfkhdyt/tugas-kuliah/tree/main/Semester%202/Praktikum%20Pengantar%20Pemrograman%20(Pak%20Ojan))
