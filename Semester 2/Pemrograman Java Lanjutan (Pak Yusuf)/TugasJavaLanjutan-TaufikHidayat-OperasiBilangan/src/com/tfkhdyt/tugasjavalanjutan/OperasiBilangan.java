@@ -231,8 +231,8 @@ public class OperasiBilangan extends javax.swing.JFrame {
 
     private void formWindowActivated(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowActivated
         // TODO add your handling code here:
-        ImageIcon icon = new ImageIcon(getClass().getResource("/icons/gambar.jpg"));
-        //ImageIcon icon = new ImageIcon("src/com/tfkhdyt/tugasjavalanjutan/icons/gambar.jpg");
+        ImageIcon icon = new ImageIcon(getClass().getResource("/icons/gambar.png"));
+        //ImageIcon icon = new ImageIcon("src/com/tfkhdyt/tugasjavalanjutan/icons/gambar.png");
         setIconImage(icon.getImage());
     }//GEN-LAST:event_formWindowActivated
 
