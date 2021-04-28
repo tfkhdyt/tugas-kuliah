@@ -7,6 +7,7 @@
   <a href="https://youtube.com/tfkhdyt"><img height="30" src="https://www.pinclipart.com/picdir/big/530-5305952_youtube-computer-icons-portable-network-graphics-logo-logo.png"></a>&nbsp;
   <a href="https://t.me/tfkhdyt"><img height="30" src="https://cdn4.iconfinder.com/data/icons/social-media-2146/512/37_social-512.png"></a>&nbsp;
   <a href="https://open.spotify.com/playlist/4JR5wqcnuOQw6ppF38Vpu9?si=zHMKBfCiRrGVamKsL8LXqQ"><img height="30" src="https://cdn2.iconfinder.com/data/icons/social-icons-33/128/Spotify-512.png"></a>
+  <a href="https://pddikti.kemdikbud.go.id/data_mahasiswa/QUUyNzdEMjktNDk0Ri00RTlDLUE4NzgtNkUwRDBDRjIxOUNB"><img height="30" src="https://i.postimg.cc/YSB2c3DG/1619598282440.png"></a>
 </p>
 <p align=center>
   <table width="75%" align="center">
