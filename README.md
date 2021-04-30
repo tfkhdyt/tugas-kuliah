@@ -39,7 +39,8 @@
 </p>
 
 ### Daftar Isi
-<a href="https://github.com/tfkhdyt/tugas-kuliah/archive/refs/heads/main.zip"><b>Download All</b></a>
+<!--<a href="https://github.com/tfkhdyt/tugas-kuliah/archive/refs/heads/main.zip"><b>Download All</b></a>-->
+<a href="https://tfkhdyt.web.app/download-tugas"><b>Download All</b></a>
 
 - [Semester 1](https://github.com/tfkhdyt/tugas-kuliah/tree/main/Semester%201) | [**Download**](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tfkhdyt/tugas-kuliah/tree/main/Semester%201)
   - [Algoritma & Pemrograman 1](https://github.com/tfkhdyt/tugas-kuliah/tree/main/Semester%201/Algoritma%20%26%20Pemrograman%20(Pak%20Yudi%20%26%20Pak%20Cecep)) | [**Download**](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tfkhdyt/tugas-kuliah/tree/main/Semester%201/Algoritma%20%26%20Pemrograman%20(Pak%20Yudi%20%26%20Pak%20Cecep))
