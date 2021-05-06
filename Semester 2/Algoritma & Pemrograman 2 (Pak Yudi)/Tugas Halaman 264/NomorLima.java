@@ -1,8 +1,8 @@
 import java.util.Scanner;
 
 public class NomorLima {
+  static Scanner in = new Scanner(System.in);
   static void intToString(int angka) {
-    Scanner in = new Scanner(System.in);
     String[] ribu = {
       "",
       " Seribu",
@@ -83,5 +83,6 @@ public class NomorLima {
     int angka = in .nextInt();
 
     intToString(angka);
+    in.close();
   }
 }

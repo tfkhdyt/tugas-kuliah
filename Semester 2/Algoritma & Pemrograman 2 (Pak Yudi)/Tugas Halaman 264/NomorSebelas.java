@@ -48,5 +48,6 @@ class NomorSebelas {
     System.out.print("Masukkan Waktu (hh:mm:ss) : ");
     time = in.next();
     jam(date, time);
+    in.close();
   }
 }
