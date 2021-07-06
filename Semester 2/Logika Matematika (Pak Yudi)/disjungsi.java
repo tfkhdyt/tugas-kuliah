@@ -11,7 +11,7 @@ public class disjungsi{
     
     System.out.println("    a = " + w + " < " + x + " = " + a);
     System.out.println("    b = " + y + " > " + z + " = " + b);
-    System.out.println("a ^ b = (" + w + " < " + x + ") v (" + y + " > " + z + ") = " + c);
+    System.out.println("a v b = (" + w + " < " + x + ") v (" + y + " > " + z + ") = " + c);
     
   }
 }
