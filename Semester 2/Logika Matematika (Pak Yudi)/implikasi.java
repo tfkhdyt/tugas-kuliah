@@ -5,10 +5,11 @@ public class implikasi{
     System.out.print("Masukkan password = ");
     String pass = in.nextLine();
     
-    if(pass == 'iniPasswordNya'){
-      System.out.println('\nAnda berhasil login!');
-    }else{
-      System.out.println('\nPassword anda salah!');
-    }
+    if(pass.equals("taufik"))
+      System.out.println("Anda berhasil login!");
+    else
+      System.out.println("Password anda salah!");
+    
+    in.close();
   }
 }
