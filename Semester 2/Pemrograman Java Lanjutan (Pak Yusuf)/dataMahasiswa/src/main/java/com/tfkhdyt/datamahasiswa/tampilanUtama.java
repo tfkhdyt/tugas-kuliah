@@ -19,6 +19,7 @@ public class tampilanUtama extends javax.swing.JFrame {
      */
     public tampilanUtama() {
         initComponents();
+        nimTxt.requestFocusInWindow();
     }
 
     /**
@@ -82,6 +83,11 @@ public class tampilanUtama extends javax.swing.JFrame {
         });
 
         ubah.setText("Ubah");
+        ubah.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ubahActionPerformed(evt);
+            }
+        });
 
         hapus.setText("Hapus");
         hapus.addActionListener(new java.awt.event.ActionListener() {
@@ -201,6 +207,14 @@ public class tampilanUtama extends javax.swing.JFrame {
         setVisible(false); //you can't see me!
         dispose(); //Destroy the JFrame object
     }//GEN-LAST:event_batalActionPerformed
+
+    private void ubahActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ubahActionPerformed
+        // TODO add your handling code here:
+        nimTxt.setText("");
+        namaTxt.setText("");
+        alamatTxt.setText("");
+        nimTxt.requestFocusInWindow();
+    }//GEN-LAST:event_ubahActionPerformed
 
     /**
      * @param args the command line arguments
