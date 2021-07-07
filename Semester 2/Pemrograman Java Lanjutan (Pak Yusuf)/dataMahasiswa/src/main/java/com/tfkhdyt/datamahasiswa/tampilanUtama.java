@@ -84,8 +84,18 @@ public class tampilanUtama extends javax.swing.JFrame {
         ubah.setText("Ubah");
 
         hapus.setText("Hapus");
+        hapus.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                hapusActionPerformed(evt);
+            }
+        });
 
         batal.setText("Batal");
+        batal.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                batalActionPerformed(evt);
+            }
+        });
 
         title.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
 
@@ -174,6 +184,23 @@ public class tampilanUtama extends javax.swing.JFrame {
         outputNama.setText("Nama      : " + nama);
         outputAlamat.setText("Alamat    : " + alamat);
     }//GEN-LAST:event_simpanActionPerformed
+
+    private void hapusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hapusActionPerformed
+        // TODO add your handling code here:
+        nimTxt.setText("");
+        namaTxt.setText("");
+        alamatTxt.setText("");
+        title.setText("");
+        outputNim.setText("");
+        outputNama.setText("");
+        outputAlamat.setText("");
+    }//GEN-LAST:event_hapusActionPerformed
+
+    private void batalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_batalActionPerformed
+        // TODO add your handling code here:
+        setVisible(false); //you can't see me!
+        dispose(); //Destroy the JFrame object
+    }//GEN-LAST:event_batalActionPerformed
 
     /**
      * @param args the command line arguments
