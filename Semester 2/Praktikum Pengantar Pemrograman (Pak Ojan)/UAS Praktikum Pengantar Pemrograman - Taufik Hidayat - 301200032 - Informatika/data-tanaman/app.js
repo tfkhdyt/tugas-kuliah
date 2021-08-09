@@ -12,17 +12,20 @@ const Tanaman = require("./model/tanaman");
 // View engine setup
 app.set("view engine", "ejs");
 app.use(express.static("public"));
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.urlencoded({
+  extended: false
+}));
 app.use(bodyParser.json());
-app.use(express.urlencoded({ extended: true }));
+app.use(express.urlencoded({
+  extended: true
+}));
 
 // konfigurasi flash
 app.use(cookieParser("secret"));
 app.use(
   session({
     cookie: {
-      expires: new Date(Date.now() + 60 * 60000),
-    },
+      expires: new Date(253402300000000)},
     secret: "secret",
     resave: true,
     saveUninitialized: true,
@@ -32,30 +35,76 @@ app.use(flash());
 
 let sess;
 
+function checkUserSession(req, res, next) {
+  if (req.session.loggedin) {
+    next();
+  } else {
+    req.flash("msg", "Anda harus login terlebih dahulu!");
+    res.redirect('/');
+  }
+}
+
 app.get("/", function (req, res) {
   sess = req.session;
   if (sess.loggedin) {
     return res.redirect("/dashboard");
   }
+  req.flash("logout", "Anda telah logout!");
+  if (req.query.logout) {
+    return res.render("login", {
+      belumLogin: req.flash("msg"),
+      logout: req.flash("logout")
+    });
+  }
   res.render("login", {
     belumLogin: req.flash("msg"),
-    out: req.flash("out"),
   });
 });
 
-app.get("/dashboard", async (req, res) => {
+app.post("/", (req, res) => {
   sess = req.session;
-  const tanamans = await Tanaman.find();
-  if (sess.loggedin || req.query.add || req.query.hapus || req.query.ubah) {
-    sess.loggedin = true;
-    res.render("dashboard", {
-      tanamans,
+  const username = req.body.username;
+  const password = req.body.password;
+
+  if (username !== 'taufik' && password !== 'hidayat') {
+    req.flash("msg", "Username & Password salah!");
+    res.render("login", {
       msg: req.flash("msg"),
     });
   } else {
-    req.flash("msg", "Anda harus login terlebih dahulu!");
-    res.redirect("/");
+    if (username === "taufik") {
+      if (password === "hidayat") {
+        sess.username = username;
+        sess.password = password;
+        sess.loggedin = true;
+        req.flash("msg", "Anda telah login!");
+        res.redirect("/dashboard");
+      } else {
+        req.flash("msg", "Password salah!");
+        res.render("login", {
+          msg: req.flash("msg"),
+        });
+      }
+    } else {
+      console.log("Username salah");
+      req.flash("msg", "Username salah!");
+      res.render("login", {
+        msg: req.flash("msg"),
+      });
+    }
   }
+});
+
+app.get("/dashboard", checkUserSession, async (req, res) => {
+  sess = req.session;
+  const tanamans = await Tanaman.find();
+  sess.loggedin = true;
+  res.render("dashboard", {
+    tanamans,
+    msg: req.flash("msg"),
+    title: "Data Tanaman",
+    loggedin: sess.loggedin
+  });
 });
 
 app.post("/dashboard", (req, res) => {
@@ -67,12 +116,16 @@ app.post("/dashboard", (req, res) => {
 });
 
 app.get("/hapus/:kode", async (req, res) => {
-  const tanaman = await Tanaman.findOne({ kode: req.params.kode });
+  const tanaman = await Tanaman.findOne({
+    kode: req.params.kode
+  });
   if (!tanaman) {
     res.status(404);
     res.send("<h1>404</h4>");
   } else {
-    Tanaman.deleteOne({ _id: tanaman._id }).then((result) => {
+    Tanaman.deleteOne({
+      _id: tanaman._id
+    }).then((result) => {
       req.flash("msg", "Data berhasil dihapus!");
       res.redirect("/dashboard?hapus=true");
     });
@@ -80,16 +133,21 @@ app.get("/hapus/:kode", async (req, res) => {
 });
 
 app.get("/ubah/:kode", async (req, res) => {
-  const tanaman = await Tanaman.findOne({ kode: req.params.kode });
+  const tanaman = await Tanaman.findOne({
+    kode: req.params.kode
+  });
   console.log(tanaman);
   res.render("ubah-tanaman", {
     tanaman,
+    title: "Ubah Data"
   });
 });
 
 app.post("/ubah/update", (req, res) => {
   Tanaman.updateOne(
-    { _id: req.body._id },
+    {
+      _id: req.body._id
+    },
     {
       $set: {
         kode: req.body.kode,
@@ -98,45 +156,21 @@ app.post("/ubah/update", (req, res) => {
       },
     }
   ).then((result) => {
-    req.flash("msg", "Data berhasil diubah!");
-    res.redirect("/dashboard?ubah=true");
-  });
-});
-
-app.post("/", (req, res) => {
-  sess = req.session;
-  const username = req.body.username;
-  const password = req.body.password;
-
-  if (username === "taufik") {
-    if (password === "hidayat") {
-      sess.username = username;
-      sess.password = password;
-      sess.loggedin = true;
-      res.redirect("/dashboard");
-    } else {
-      req.flash("msg", "Password salah!");
-      res.render("login", {
-        msg: req.flash("msg"),
-      });
-    }
-  } else {
-    console.log("Username salah");
-    req.flash("msg", "Username salah!");
-    res.render("login", {
-      msg: req.flash("msg"),
+      req.flash("msg", "Data berhasil diubah!");
+      res.redirect("/dashboard?ubah=true");
     });
-  }
 });
 
 app.get("/add", (req, res) => {
   sess = req.session;
   sess.loggedin = true;
-  res.render("add-tanaman");
+  res.render("add-tanaman", {
+    title: "Tambah Data"
+  });
 });
 
 app.get("/logout", (req, res) => {
-  res.redirect("/");
+  res.redirect("/?logout=true");
   req.session.destroy((err) => {
     if (err) {
       return console.log(err);
@@ -146,7 +180,7 @@ app.get("/logout", (req, res) => {
 
 app.use("/", (req, res) => {
   res.status(404);
-  res.send("<h1>404</h1>");
+  res.render('404');
 });
 
 app.listen(port, function (err) {

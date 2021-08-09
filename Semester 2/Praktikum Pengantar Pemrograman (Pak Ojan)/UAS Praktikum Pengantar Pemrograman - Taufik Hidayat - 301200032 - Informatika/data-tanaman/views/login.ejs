@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--===============================================================================================-->	
-    <link rel="icon" type="image/png" href="login/images/icons/favicon.ico"/>
+    <link rel="icon" type="image/png" href="img/favicon.ico"/>
     <!--===============================================================================================-->
     <link rel="stylesheet" type="text/css" href="login/vendor/bootstrap/css/bootstrap.min.css">
     <!--===============================================================================================-->
@@ -20,6 +20,16 @@
     <link rel="stylesheet" type="text/css" href="login/css/util.css">
     <link rel="stylesheet" type="text/css" href="login/css/main.css">
     <!--===============================================================================================-->
+    <link rel="icon" href="img/favicon.ico">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HE0DLBZRRY"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-HE0DLBZRRY');
+    </script>
   </head>
   <body>
 
@@ -27,7 +37,7 @@
       <div class="container-login100">
         <div class="wrap-login100">
           <div class="login100-pic js-tilt" data-tilt>
-            <img src="login/images/img-01.png" alt="IMG">
+            <img src="https://i.postimg.cc/VspX4CTB/botanic.png" alt="IMG">
           </div>
 
           <form class="login100-form validate-form" method='post' action="/" autocomplete="off">
@@ -35,24 +45,7 @@
               Data Tanaman
             </span>
 
-
-            <% if (typeof msg != 'undefined') {
-            if(msg.length !== 0) { %>
-            <div class="alert alert-danger" role="alert">
-              <%= msg %>
-            </div>
-            <% } 
-            }%>
-
-            <% if (typeof belumLogin != 'undefined') {
-            if(belumLogin.length !== 0) { %>
-            <div class="alert alert-danger" role="alert">
-              <%= belumLogin %>
-            </div>
-            <% } 
-            }%>
-
-            <div class="wrap-input100 validate-input">
+            <div class="wrap-input100 validate-input" data-validate = "Username harus diisi">
               <input class="input100" type="text" name="username" placeholder="Username">
               <span class="focus-input100"></span>
               <span class="symbol-input100">
@@ -60,7 +53,7 @@
               </span>
             </div>
 
-            <div class="wrap-input100 validate-input" data-validate = "Password is required">
+            <div class="wrap-input100 validate-input" data-validate = "Password harus diisi">
               <input class="input100" type="password" name="password" placeholder="Password">
               <span class="focus-input100"></span>
               <span class="symbol-input100">
@@ -102,6 +95,41 @@
     </script>
     <!--===============================================================================================-->
     <script src="login/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.2/dist/sweetalert2.all.min.js"></script>
+      <% if (typeof msg != 'undefined') {
+        if(msg.length !== 0) { %>
+          <script>
+            Swal.fire(
+              'Waduh...',
+              '<%= msg %>',
+              'error'
+            )
+          </script>
+        <% } 
+      }%>
+      
+      <% if (typeof belumLogin != 'undefined') {
+        if(belumLogin.length !== 0) { %>
+          <script>
+            Swal.fire(
+              'Waduh...',
+              '<%= belumLogin %>',
+              'error'
+            )
+          </script>
+        <% } 
+      }%>
 
+      <% if (typeof logout != 'undefined') {
+        if(logout.length !== 0) { %>
+          <script>
+            Swal.fire(
+              'Berhasil',
+              '<%= logout %>',
+              'success'
+            )
+          </script>
+        <% } 
+      }%>
   </body>
 </html>
