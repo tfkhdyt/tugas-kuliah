@@ -8,6 +8,7 @@ int main() {
   
   printf("Nama       : %s\n", nama.c_str());
   printf("Jurusan    : %s\n\n", jurusan.c_str());
+  
   for(int i = 0; i < 15; i++){
     printf("Nilai ke %2d: %2d\n",i+1, array[i]);
   }
