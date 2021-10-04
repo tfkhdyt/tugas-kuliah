@@ -14,7 +14,7 @@ void clear() {
   // system("CLS");
 }
 
-// Fungsi untuk menampilkan garis vertikal
+// Fungsi untuk menampilkan garis
 void tampilGaris() {
   printf("-------------------------------------------\n");
 }
