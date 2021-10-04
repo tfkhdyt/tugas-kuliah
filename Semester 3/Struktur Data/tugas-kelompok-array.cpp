@@ -8,10 +8,11 @@ bool arraySudahTerisi = false;
 // Fungsi-fungsi
 // Fungsi clear screen
 void clear() {
-  // UNIX
-  system("clear");
-  // Windows
-  // system("CLS");
+  #ifdef _WIN32
+    system("CLS");
+  #else
+    system("clear");
+  #endif
 }
 
 // Fungsi untuk menampilkan garis
