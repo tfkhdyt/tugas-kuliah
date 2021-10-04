@@ -86,6 +86,7 @@ void hapusData(int array[], int &jumlah) {
 void reset(int array[], int &jumlah){
   array = {};
   jumlah = 0;
+  arraySudahTerisi = false;
   clear();
 }
 
@@ -164,7 +165,6 @@ int main() {
         clear();
         printf("Input tidak valid! Pilih menu yang benar\n");
         tampilGaris();
-        continue;
         break;
     }
   }
