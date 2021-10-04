@@ -21,12 +21,21 @@ void tampilMenu(){
   printf("5. Exit\n");
 }
 
-void masukkanNilai(){
-  
+int masukkanNilai(){
+  int jumlah;
+  printf("Masukkan jumlah elemen pada array (1 - 20): ");
+  cin >> jumlah;
+  int array[jumlah];
+  for(int i = 0; i < jumlah; i++){
+    printf("\nMasukkan angka ke-%d: ", i + 1);
+    cin >> array[i];
+    printf("\n");
+  }
+  return array[jumlah];
 }
 
 int main(){
-  int menu;
+  int menu, array[20];
   while(true){
     tampilNama();
     tampilMenu();
@@ -37,6 +46,12 @@ int main(){
     
     switch(menu){
       case 1:
+        system("clear");
+        array[20] = masukkanNilai();
+        printf("Input array sukses!\n");
+        for(int i = 0; i < sizeof(array)/sizeof(array[0]); i++){
+          printf("%d ", array[i]);
+        }
         break;
       case 2:
         break;
