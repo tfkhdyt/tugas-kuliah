@@ -2,16 +2,24 @@
 #include <stdlib.h>
 using namespace std;
 
+// Deklarasi & inisialisasi global variable
 bool arraySudahTerisi = false;
 
+// Fungsi-fungsi
+// Fungsi clear screen
 void clear() {
+  // UNIX
   system("clear");
+  // Windows
+  // system("CLS");
 }
 
+// Fungsi untuk menampilkan garis vertikal
 void tampilGaris() {
   printf("-------------------------------------------\n");
 }
 
+// Fungsi untuk menampilkan nama, NIM, dan kelas dari pembuat program
 void tampilNama() {
   printf("Nama Anggota : Taufik Hidayat (301200032)\n");
   printf("               Teja Kusumah   (301200033)\n");
@@ -19,6 +27,7 @@ void tampilNama() {
   tampilGaris();
 }
 
+// Fungsi untuk menampilkan menu
 void tampilMenu() {
   printf("1. Masukkan nilai\n");
   printf("2. Lihat array\n");
@@ -27,6 +36,7 @@ void tampilMenu() {
   printf("5. Exit\n");
 }
 
+// Fungsi untuk memasukkan nilai² ke dalam array
 int masukkanNilai(int array[], int &jumlah) {
   clear();
   printf("Masukkan jumlah elemen pada array (1 - 20): ");
@@ -38,12 +48,15 @@ int masukkanNilai(int array[], int &jumlah) {
     cin >> array[i];
   }
   arraySudahTerisi = true;
+  clear();
   return array[jumlah];
 }
 
+// Fungsi untuk menampilkan isi array
 void tampilArray(int array[], int &jumlah) {
   printf("Array: ");
   if (jumlah == 0) printf("Kosong");
+  
   for(int i = 0; i < jumlah; i++) {
     printf("%d", array[i]);
     if (i < jumlah - 1) printf(", ");
@@ -52,6 +65,7 @@ void tampilArray(int array[], int &jumlah) {
   tampilGaris();
 }
 
+// Fungsi untuk menghapus data dari array
 void hapusData(int array[], int &jumlah) {
   int hapus;
   printf("Masukkan data yang ingin dihapus: ");
@@ -65,17 +79,23 @@ void hapusData(int array[], int &jumlah) {
     }
   }
   jumlah--;
+  clear();
 }
 
+// Fungsi untuk me-reset array 
 void reset(int array[], int &jumlah){
   array = {};
   jumlah = 0;
+  clear();
 }
 
+// Fungsi utama
 int main() {
-  int menu,
-  array[20] = {},
-  jumlah = 0;
+  // Deklarasi & inisialisasi local variable
+  char menu;
+  int array[20] = {}, jumlah = 0;
+  
+  // Agar program terus berjalan sampai di-exit oleh user
   while(true) {
     tampilNama();
     tampilMenu();
@@ -83,12 +103,12 @@ int main() {
     printf("Pilih menu (1 - 5): ");
     cin >> menu;
 
+    // Switch untuk setiap menu
     switch(menu) {
-      case 1:
+      // Memasukkan nilai
+      case '1':
         if (!arraySudahTerisi){
-          
           masukkanNilai(array, jumlah);
-          clear();
           printf("Input array sukses!\n");
           tampilGaris();
         } else {
@@ -97,27 +117,28 @@ int main() {
           tampilGaris();
         }
         break;
-      case 2:
+      // Melihat array
+      case '2':
         clear();
         tampilArray(array, jumlah);
         break;
-      case 3:
+      // Menghapus data
+      case '3':
         clear();
         tampilArray(array, jumlah);
         hapusData(array, jumlah);
-        clear();
         printf("Data berhasil dihapus!\n");
         tampilGaris();
         tampilArray(array, jumlah);
         break;
-      case 4:
+      // Reset data
+      case '4':
         char pilihan;
         printf("Apakah Anda yakin ingin me-reset array (y/n)? ");
         cin >> pilihan;
         switch (pilihan) {
           case 'y':
             reset(array, jumlah);
-            clear();
             printf("Array berhasil direset!\n");
             tampilGaris();
             break;
@@ -133,10 +154,12 @@ int main() {
             break;
         }
         break;
-      case 5:
+      // Exit program
+      case '5':
         clear();
         printf("Anda telah keluar dari program!");
         return 0;
+      // Handle input tidak valid
       default:
         clear();
         printf("Input tidak valid! Pilih menu yang benar\n");
