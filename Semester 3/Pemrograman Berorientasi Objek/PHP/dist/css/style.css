@@ -21,3 +21,11 @@ body {
 .card-footer {
   font-size: .8rem;
 }
+
+.content{
+  transition: opacity .5s ease-in-out;
+}
+
+.fade{
+  opacity: 0;
+}

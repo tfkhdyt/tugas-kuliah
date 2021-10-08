@@ -35,7 +35,7 @@ class Motor {
   }
 
   public function jalankan() {
-    echo "Nyalakan motor...";
+    return "Nyalakan motor...";
   }
 }
 
@@ -65,7 +65,7 @@ class MotorMatic extends Motor {
   }
 
   public function jalankan() {
-    echo "Nyalakan motor, lalu gas...";
+    return "Nyalakan motor, lalu gas...";
   }
 }
 
@@ -95,7 +95,7 @@ class MotorKopling extends Motor {
   }
 
   public function jalankan() {
-    echo "Nyalakan motor, tarik kopling, naik gigi, lalu perlahan lepas kopling dan gas...";
+    return "Nyalakan motor, tarik kopling, naik gigi, lalu perlahan lepas kopling dan gas...";
   }
 }
 
@@ -125,7 +125,7 @@ class MotorBebek extends Motor {
   }
 
   public function jalankan() {
-    echo "Nyalakan motor, naik gigi, lalu gas...";
+    return "Nyalakan motor, naik gigi, lalu gas...";
   }
 }
 
@@ -138,6 +138,9 @@ $bebek = new MotorBebek("Honda", "Supra X", "Merah", 2019, "supra.jpg");
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Inheritance & Polymorphism PHP</title>
+  <link rel="preload" as="image" href="asset/images/nmax.jpg">
+  <link rel="preload" as="image" href="asset/images/satria.jpg">
+  <link rel="preload" as="image" href="asset/images/supra.jpg">
   <!-- Development -->
   <!-- <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
   <!-- Production -->
@@ -158,158 +161,18 @@ $bebek = new MotorBebek("Honda", "Supra X", "Merah", 2019, "supra.jpg");
               <div class="col-12">
                 <ul class="nav nav-tabs nav-fill" id="myTab" role="tablist">
                   <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="matic-tab" data-bs-toggle="tab" data-bs-target="#matic" type="button" role="tab" aria-controls="matic" aria-selected="true">Motor Matic</button>
+                    <button class="nav-link active" id="matic" data-bs-toggle="tab" type="button" role="tab" aria-selected="true">Motor Matic</button>
                   </li>
                   <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="kopling-tab" data-bs-toggle="tab" data-bs-target="#kopling" type="button" role="tab" aria-controls="kopling" aria-selected="false">Motor Kopling</button>
+                    <button class="nav-link" id="kopling" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">Motor Kopling</button>
                   </li>
                   <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="bebek-tab" data-bs-toggle="tab" data-bs-target="#bebek" type="button" role="tab" aria-controls="bebek" aria-selected="false">Motor Bebek</button>
+                    <button class="nav-link" id="bebek" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">Motor Bebek</button>
                   </li>
                 </ul>
               </div>
               <!-- Content -->
               <div class="col-12 mt-2 content">
-                <div class="tab-content" id="nav-tabContent">
-                  <div class="tab-pane fade show active" id="matic" role="tabpanel" aria-labelledby="matic-tab">
-                    <div class="row">
-                      <div class="col-md-5 mt-md-2">
-                        <img src="asset/images/<?= $matic->getGambar() ?>" alt="Gambar Nmax" class="img-fluid">
-                      </div>
-                      <div class="col-md-7 mt-md-2">
-                        <div class="row">
-                          <div class="col-3 text-nowrap">
-                            Merk
-                          </div>
-                          <div class="col-9">
-                            : <b><?= $matic->getMerk() ?></b>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-3 text-nowrap">
-                            Tipe
-                          </div>
-                          <div class="col-9">
-                            : <b><?= $matic->getTipe() ?></b>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-3 text-nowrap">
-                            Warna
-                          </div>
-                          <div class="col-9">
-                            : <b><?= $matic->getWarna() ?></b>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-3 text-nowrap">
-                            Tahun
-                          </div>
-                          <div class="col-9">
-                            : <b><?= $matic->getTahun() ?></b>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-12 fst-italic text-wrap">
-                            <?= $matic->jalankan() ?>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="tab-pane fade" id="kopling" role="tabpanel" aria-labelledby="kopling-tab">
-                    <div class="row">
-                      <div class="col-md-5 mt-md-2">
-                        <img src="asset/images/<?= $kopling->getGambar() ?>" alt="Gambar Satria" class="img-fluid">
-                      </div>
-                      <div class="col-md-7 mt-md-2">
-                        <div class="row">
-                          <div class="col-3 text-nowrap">
-                            Merk
-                          </div>
-                          <div class="col-9">
-                            : <b><?= $kopling->getMerk() ?></b>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-3 text-nowrap">
-                            Tipe
-                          </div>
-                          <div class="col-9">
-                            : <b><?= $kopling->getTipe() ?></b>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-3 text-nowrap">
-                            Warna
-                          </div>
-                          <div class="col-9">
-                            : <b><?= $kopling->getWarna() ?></b>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-3 text-nowrap">
-                            Tahun
-                          </div>
-                          <div class="col-9">
-                            : <b><?= $kopling->getTahun() ?></b>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-12 fst-italic text-wrap">
-                            <?= $kopling->jalankan() ?>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="tab-pane fade" id="bebek" role="tabpanel" aria-labelledby="bebek-tab">
-                    <div class="row">
-                      <div class="col-md-5 mt-md-2">
-                        <img src="asset/images/<?= $bebek->getGambar() ?>" alt="Gambar Supra" class="img-fluid">
-                      </div>
-                      <div class="col-md-7 mt-md-2">
-                        <div class="row">
-                          <div class="col-3 text-nowrap">
-                            Merk
-                          </div>
-                          <div class="col-9">
-                            : <b><?= $bebek->getMerk() ?></b>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-3 text-nowrap">
-                            Tipe
-                          </div>
-                          <div class="col-9">
-                            : <b><?= $bebek->getTipe() ?></b>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-3 text-nowrap">
-                            Warna
-                          </div>
-                          <div class="col-9">
-                            : <b><?= $bebek->getWarna() ?></b>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-3 text-nowrap">
-                            Tahun
-                          </div>
-                          <div class="col-9">
-                            : <b><?= $bebek->getTahun() ?></b>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-12 fst-italic text-wrap">
-                            <?= $bebek->jalankan() ?>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
@@ -321,5 +184,105 @@ $bebek = new MotorBebek("Honda", "Supra X", "Merah", 2019, "supra.jpg");
     </div>
   </div>
   <script src="dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    let merk, tipe, warna, tahun, gambar;
+    const nav = document.getElementsByClassName('nav')[0];
+    const content = document.getElementsByClassName('content')[0];
+    
+    const render = (merk, tipe, warna, tahun, gambar, jalankan) => {
+      content.innerHTML = `
+        <div class="row">
+          <div class="col-md-5 mt-md-2">
+            <img src="asset/images/${gambar}" class="img-fluid">
+          </div>
+          <div class="col-md-7 mt-md-2">
+            <div class="row">
+              <div class="col-3 text-nowrap">
+                Merk
+              </div>
+              <div class="col-9">
+                : <b>${merk}</b>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-3 text-nowrap">
+                Tipe
+              </div>
+              <div class="col-9">
+                : <b>${tipe}</b>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-3 text-nowrap">
+                Warna
+              </div>
+              <div class="col-9">
+                : <b>${warna}</b>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-3 text-nowrap">
+                Tahun
+              </div>
+              <div class="col-9">
+                : <b>${tahun}</b>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 fst-italic text-wrap">
+                ${jalankan}
+              </div>
+            </div>
+          </div>
+        </div>
+      `;
+    };
+    
+    render(
+      '<?= $matic->getMerk() ?>',
+      '<?= $matic->getTipe() ?>',
+      '<?= $matic->getWarna() ?>',
+      '<?= $matic->getTahun() ?>',
+      '<?= $matic->getGambar() ?>',
+      '<?= $matic->jalankan() ?>'
+    );
+    
+    nav.addEventListener('click', (e) => {
+      // if(e.target.classList.contains('active')) return;
+      content.classList.add('fade');
+      const jenis = e.target.id;
+      switch(jenis) {
+        case 'matic':
+          merk = '<?= $matic->getMerk() ?>';
+          tipe = '<?= $matic->getTipe() ?>';
+          warna = '<?= $matic->getWarna() ?>';
+          tahun = '<?= $matic->getTahun() ?>';
+          gambar = '<?= $matic->getGambar() ?>';
+          jalankan = '<?= $matic->jalankan() ?>';
+          break;
+        case 'kopling':
+          merk = '<?= $kopling->getMerk() ?>';
+          tipe = '<?= $kopling->getTipe() ?>';
+          warna = '<?= $kopling->getWarna() ?>';
+          tahun = '<?= $kopling->getTahun() ?>';
+          gambar = '<?= $kopling->getGambar() ?>';
+          jalankan = '<?= $kopling->jalankan() ?>';
+          break;
+        case 'bebek':
+          merk = '<?= $bebek->getMerk() ?>';
+          tipe = '<?= $bebek->getTipe() ?>';
+          warna = '<?= $bebek->getWarna() ?>';
+          tahun = '<?= $bebek->getTahun() ?>';
+          gambar = '<?= $bebek->getGambar() ?>';
+          jalankan = '<?= $bebek->jalankan() ?>';
+          break;
+      }
+      console.log(jenis, merk);
+      setTimeout(() => {
+        render(merk, tipe, warna, tahun, gambar, jalankan);
+        content.classList.remove('fade');
+      }, 500);
+    });
+  </script>
 </body>
 </html>
