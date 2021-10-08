@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');*/
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+}
+
+.card-header {
+  font-size: .9rem;
+}
+
+.nav-item {
+  font-size: .67rem;
+}
+
+.nav-link.active {
+  font-weight: bold;
+}
+
+.card-footer {
+  font-size: .8rem;
+}
