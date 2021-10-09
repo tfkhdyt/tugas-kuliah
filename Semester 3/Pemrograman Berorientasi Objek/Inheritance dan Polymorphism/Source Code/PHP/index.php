@@ -1,10 +1,7 @@
+<!-- Taufik Hidayat | 301200032 | Informatika Pagi -->
 <?php
 class Motor {
-  private $merk,
-  $tipe,
-  $warna,
-  $tahun,
-  $gambar;
+  private $merk, $tipe, $warna, $tahun, $gambar;
 
   public function __construct($merk, $tipe, $warna, $tahun, $gambar) {
     $this->merk = $merk;
@@ -71,6 +68,7 @@ class MotorMatic extends Motor {
 
 class MotorKopling extends Motor {
   public function __construct($merk, $tipe, $warna, $tahun, $gambar) {
+    // Taufik Hidayat | 301200032 | Informatika Pagi
     parent::__construct($merk, $tipe, $warna, $tahun, $gambar);
   }
 
@@ -141,6 +139,7 @@ $bebek = new MotorBebek("Honda", "Supra X", "Merah", 2019, "supra.jpg");
   <link rel="preload" as="image" href="asset/images/nmax.jpg">
   <link rel="preload" as="image" href="asset/images/satria.jpg">
   <link rel="preload" as="image" href="asset/images/supra.jpg">
+  <!-- Taufik Hidayat | 301200032 | Informatika Pagi -->
   <!-- Development -->
   <!-- <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
   <!-- Production -->
@@ -190,6 +189,7 @@ $bebek = new MotorBebek("Honda", "Supra X", "Merah", 2019, "supra.jpg");
     const content = document.getElementsByClassName('content')[0];
     
     const render = (merk, tipe, warna, tahun, gambar, jalankan) => {
+      // Taufik Hidayat | 301200032 | Informatika Pagi
       content.innerHTML = `
         <div class="row">
           <div class="col-md-5 mt-md-2">
@@ -286,3 +286,4 @@ $bebek = new MotorBebek("Honda", "Supra X", "Merah", 2019, "supra.jpg");
   </script>
 </body>
 </html>
+<!-- Taufik Hidayat | 301200032 | Informatika Pagi -->
