@@ -1,13 +1,8 @@
-// Taufik Hidayat | 301200032 | Informatika Pagi
 package inheritance;
-
-import inheritance.MotorBebek;
-import inheritance.MotorKopling;
 
 public class Main {
 
   public static void main(String[] args) {
-    // Taufik Hidayat | 301200032 | Informatika Pagi
     MotorMatic matic = new MotorMatic("Yamaha", "Nmax", "Abu-abu", 2021);
     MotorKopling kopling = new MotorKopling("Suzuki", "Satria F150", "Biru", 2020);
     MotorBebek bebek = new MotorBebek("Honda", "Supra X", "Merah", 2019);
@@ -18,7 +13,6 @@ public class Main {
       + "Tipe : " + matic.getTipe() + "\n"
       + "Warna: " + matic.getWarna() + "\n"
       + "Tahun: " + matic.getTahun()
-      // Taufik Hidayat | 301200032 | Informatika Pagi
     );
     matic.jalankan();
     
@@ -29,7 +23,6 @@ public class Main {
       + "Warna: " + kopling.getWarna() + "\n"
       + "Tahun: " + kopling.getTahun()
     );
-    // Taufik Hidayat | 301200032 | Informatika Pagi
     kopling.jalankan();
     
     System.out.println(
@@ -42,4 +35,3 @@ public class Main {
     bebek.jalankan();
   }
 }
-// Taufik Hidayat | 301200032 | Informatika Pagi
