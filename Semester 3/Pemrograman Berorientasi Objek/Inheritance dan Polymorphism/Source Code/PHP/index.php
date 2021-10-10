@@ -1,135 +1,173 @@
 <!-- Taufik Hidayat | 301200032 | Informatika Pagi -->
 <?php
-class Motor {
-  private $merk, $tipe, $warna, $tahun, $gambar;
+class Motor
+{
+    private $merk, $tipe, $warna, $tahun, $gambar;
 
-  public function __construct($merk, $tipe, $warna, $tahun, $gambar) {
-    $this->merk = $merk;
-    $this->tipe = $tipe;
-    $this->warna = $warna;
-    $this->tahun = $tahun;
-    $this->gambar = $gambar;
-  }
+    public function __construct($merk, $tipe, $warna, $tahun, $gambar)
+    {
+        $this->merk = $merk;
+        $this->tipe = $tipe;
+        $this->warna = $warna;
+        $this->tahun = $tahun;
+        $this->gambar = $gambar;
+    }
 
-  public function getMerk() {
-    return $this->merk;
-  }
+    public function getMerk()
+    {
+        return $this->merk;
+    }
 
-  public function getTipe() {
-    return $this->tipe;
-  }
+    public function getTipe()
+    {
+        return $this->tipe;
+    }
 
-  public function getWarna() {
-    return $this->warna;
-  }
+    public function getWarna()
+    {
+        return $this->warna;
+    }
 
-  public function getTahun() {
-    return $this->tahun;
-  }
+    public function getTahun()
+    {
+        return $this->tahun;
+    }
 
-  public function getGambar() {
-    return $this->gambar;
-  }
+    public function getGambar()
+    {
+        return $this->gambar;
+    }
 
-  public function jalankan() {
-    return "Nyalakan motor...";
-  }
+    public function jalankan()
+    {
+        return 'Nyalakan motor...';
+    }
 }
 
-class MotorMatic extends Motor {
-  public function __construct($merk, $tipe, $warna, $tahun, $gambar) {
-    parent::__construct($merk, $tipe, $warna, $tahun, $gambar);
-  }
+class MotorMatic extends Motor
+{
+    public function __construct($merk, $tipe, $warna, $tahun, $gambar)
+    {
+        parent::__construct($merk, $tipe, $warna, $tahun, $gambar);
+    }
 
-  public function getMerk() {
-    return parent::getMerk();
-  }
+    public function getMerk()
+    {
+        return parent::getMerk();
+    }
 
-  public function getTipe() {
-    return parent::getTipe();
-  }
+    public function getTipe()
+    {
+        return parent::getTipe();
+    }
 
-  public function getWarna() {
-    return parent::getWarna();
-  }
+    public function getWarna()
+    {
+        return parent::getWarna();
+    }
 
-  public function getTahun() {
-    return parent::getTahun();
-  }
+    public function getTahun()
+    {
+        return parent::getTahun();
+    }
 
-  public function getGambar() {
-    return parent::getGambar();
-  }
+    public function getGambar()
+    {
+        return parent::getGambar();
+    }
 
-  public function jalankan() {
-    return "Nyalakan motor, lalu gas...";
-  }
+    public function jalankan()
+    {
+        return 'Nyalakan motor, lalu gas...';
+    }
 }
 
-class MotorKopling extends Motor {
-  public function __construct($merk, $tipe, $warna, $tahun, $gambar) {
-    // Taufik Hidayat | 301200032 | Informatika Pagi
-    parent::__construct($merk, $tipe, $warna, $tahun, $gambar);
-  }
+class MotorKopling extends Motor
+{
+    public function __construct($merk, $tipe, $warna, $tahun, $gambar)
+    {
+        // Taufik Hidayat | 301200032 | Informatika Pagi
+        parent::__construct($merk, $tipe, $warna, $tahun, $gambar);
+    }
 
-  public function getMerk() {
-    return parent::getMerk();
-  }
+    public function getMerk()
+    {
+        return parent::getMerk();
+    }
 
-  public function getTipe() {
-    return parent::getTipe();
-  }
+    public function getTipe()
+    {
+        return parent::getTipe();
+    }
 
-  public function getWarna() {
-    return parent::getWarna();
-  }
+    public function getWarna()
+    {
+        return parent::getWarna();
+    }
 
-  public function getTahun() {
-    return parent::getTahun();
-  }
+    public function getTahun()
+    {
+        return parent::getTahun();
+    }
 
-  public function getGambar() {
-    return parent::getGambar();
-  }
+    public function getGambar()
+    {
+        return parent::getGambar();
+    }
 
-  public function jalankan() {
-    return "Nyalakan motor, tarik kopling, naik gigi, lalu perlahan lepas kopling dan gas...";
-  }
+    public function jalankan()
+    {
+        return 'Nyalakan motor, tarik kopling, naik gigi, lalu perlahan lepas kopling dan gas...';
+    }
 }
 
-class MotorBebek extends Motor {
-  public function __construct($merk, $tipe, $warna, $tahun, $gambar) {
-    parent::__construct($merk, $tipe, $warna, $tahun, $gambar);
-  }
+class MotorBebek extends Motor
+{
+    public function __construct($merk, $tipe, $warna, $tahun, $gambar)
+    {
+        parent::__construct($merk, $tipe, $warna, $tahun, $gambar);
+    }
 
-  public function getMerk() {
-    return parent::getMerk();
-  }
+    public function getMerk()
+    {
+        return parent::getMerk();
+    }
 
-  public function getTipe() {
-    return parent::getTipe();
-  }
+    public function getTipe()
+    {
+        return parent::getTipe();
+    }
 
-  public function getWarna() {
-    return parent::getWarna();
-  }
+    public function getWarna()
+    {
+        return parent::getWarna();
+    }
 
-  public function getTahun() {
-    return parent::getTahun();
-  }
+    public function getTahun()
+    {
+        return parent::getTahun();
+    }
 
-  public function getGambar() {
-    return parent::getGambar();
-  }
+    public function getGambar()
+    {
+        return parent::getGambar();
+    }
 
-  public function jalankan() {
-    return "Nyalakan motor, naik gigi, lalu gas...";
-  }
+    public function jalankan()
+    {
+        return 'Nyalakan motor, naik gigi, lalu gas...';
+    }
 }
 
-$matic = new MotorMatic("Yamaha", "Nmax", "Abu-abu", 2021, "nmax.jpg");
-$kopling = new MotorKopling("Suzuki", "Satria F150", "Putih", 2020, "satria.jpg");
-$bebek = new MotorBebek("Honda", "Supra X", "Merah", 2019, "supra.jpg");
+$matic = new MotorMatic('Yamaha', 'Nmax', 'Abu-abu', 2021, 'nmax.jpg');
+$kopling = new MotorKopling(
+    'Suzuki',
+    'Satria F150',
+    'Putih',
+    2020,
+    'satria.jpg'
+);
+$bebek = new MotorBebek('Honda', 'Supra X', 'Merah', 2019, 'supra.jpg');
 ?>
 <!DOCTYPE html>
 <html>
