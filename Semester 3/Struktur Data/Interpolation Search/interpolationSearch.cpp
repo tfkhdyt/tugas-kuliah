@@ -1,3 +1,4 @@
+// Taufik Hidayat | 301200032 | Informatika Pagi
 #include <iostream>
 using namespace std;
 
@@ -18,6 +19,7 @@ int inputArray(int array[], int jumlah) {
   }
   return array[jumlah];
 }
+// Taufik Hidayat | 301200032 | Informatika Pagi
 
 int urutkanArray(int sortedArray[], int jumlah) {
   int min, temp;
@@ -38,16 +40,15 @@ int interpolationSearch(int array[], int jumlah, int angkaYangDicari) {
       high = jumlah - 1;
 
   while (low <= high && angkaYangDicari >= array[low] && angkaYangDicari <= array[high]) {
+    // Taufik Hidayat | 301200032 | Informatika Pagi
     if (low == high) {
       if (array[low] == angkaYangDicari) return low;
       return -1;
     }
-    int pos = low + (((double)(high - low) /
-      (array[high] - array[low])) * (angkaYangDicari - array[low]));
+    int pos = low + (((double)(high - low) / (array[high] - array[low])) * (angkaYangDicari - array[low]));
 
     if (array[pos] == angkaYangDicari)
       return pos;
-
     if (array[pos] < angkaYangDicari)
       low = pos + 1;
     else
@@ -61,7 +62,7 @@ int main() {
   angkaYangDicari;
 
   cetakNama();
-
+  // Taufik Hidayat | 301200032 | Informatika Pagi
   printf("Masukkan jumlah data yang akan di-input: ");
   cin >> jumlah;
   int array[jumlah];
@@ -87,3 +88,4 @@ int main() {
     cout << "Data tidak ditemukan!";
   return 0;
 }
+// Taufik Hidayat | 301200032 | Informatika Pagi
