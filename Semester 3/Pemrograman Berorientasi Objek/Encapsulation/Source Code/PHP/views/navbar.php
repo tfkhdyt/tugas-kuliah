@@ -30,7 +30,7 @@ $tampil = $_GET["tampil"];
           <a class="nav-link" href="https://tfkhdyt.my.id/" target="_blank"><i class="fas fa-user"></i> About Me</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="https://github.com/tfkhdyt/tugas-kuliah/tree/main/Semester%203/Pemrograman%20Berorientasi%20Objek/Encapsulation/PHP" target="_blank"><i class="fas fa-code"></i> Source Code</a>
+          <a class="nav-link" href="https://github.com/tfkhdyt/tugas-kuliah/tree/main/Semester%203/Pemrograman%20Berorientasi%20Objek/Encapsulation/Source%20Code/PHP" target="_blank"><i class="fas fa-code"></i> Source Code</a>
         </li>
       </ul>
     </div>
