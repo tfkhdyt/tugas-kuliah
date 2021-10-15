@@ -2,6 +2,7 @@
 error_reporting(E_ERROR | E_PARSE);
 $input = $_GET["input"] || null;
 $tampil = $_GET["tampil"] || null;
+$_404 = $_GET["404"] || null;
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -21,6 +22,8 @@ $tampil = $_GET["tampil"] || null;
       require "views/input.php";
   } elseif (isset($tampil)) {
       require "views/tampil.php";
+  } elseif (isset($_404)) {
+      require "views/404.php";
   } ?>
   <script src="dist/js/bootstrap.bundle.min.js"></script>
 </body>

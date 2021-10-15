@@ -78,7 +78,7 @@ if (empty($_POST["nama"])): ?>
       </div>
       <div class="row">
         <div class="col">
-          <a class="btn btn-primary btn-sm" href="?input"><i class="fas fa-chevron-left"></i> Kembali</a>
+          <a class="btn btn-primary btn-sm" href="/?input"><i class="fas fa-chevron-left"></i> Kembali</a>
         </div>
       </div>
     </div>
