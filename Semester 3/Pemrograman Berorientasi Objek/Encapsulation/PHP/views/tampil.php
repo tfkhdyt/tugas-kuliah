@@ -38,7 +38,7 @@ if (empty($_POST["nama"])): ?>
 ?>
 <div class="container">
   <div class="row">
-    <div class="col col-md-8 m-3 mx-md-0">
+    <div class="col col-md-6 m-3 mx-md-0">
       <h4>Data Mahasiswa</h4>
       <!-- Nama -->
       <div class="row mb-2">

@@ -1,6 +1,6 @@
 <div class="container">
   <div class="row">
-    <div class="col col-md-8 m-3 mx-md-0">
+    <div class="col col-md-6 m-3 mx-md-0">
       <h4>Input Data Mahasiswa</h4>
       <?php if (isset($_GET["error"])): ?>
       <div class="alert alert-danger alert-dismissible fade show" role="alert">
