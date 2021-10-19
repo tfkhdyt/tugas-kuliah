@@ -17,6 +17,7 @@ $_404 = $_GET["404"] || null;
   <link rel="icon" href="https://raw.githubusercontent.com/tfkhdyt/tfkhdyt-portfolio/main/assets/img/favicon.ico" /> 
 </head>
 <body>
+  <div class="bg"></div>
   <?php require "views/navbar.php"; ?>
   <?php if (isset($input) || $_GET == null) {
       require "views/input.php";
