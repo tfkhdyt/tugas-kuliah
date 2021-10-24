@@ -40,6 +40,7 @@ $_404 = $_GET["404"] || null;
     const hr = document.querySelectorAll("hr");
     const form = document.querySelectorAll(".form-control, .input-group-text");
     const formGroup = document.querySelectorAll(".input-group-text");
+    console.log();
 
     toggle.addEventListener("change", () => {
       if (toggle.checked) {
@@ -53,6 +54,7 @@ $_404 = $_GET["404"] || null;
         hr.forEach((e) => e.style.color = "white");
         form.forEach((e) => e.style.backgroundColor = "#737373");
         form.forEach((e) => e.style.borderColor = "#25272C");
+        form[form.length - 2].style.backgroundColor = "#545454";
         formGroup.forEach((e) => e.style.backgroundColor = "#545454");
       } else {
         document.cookie = "dark=false";
@@ -65,6 +67,7 @@ $_404 = $_GET["404"] || null;
         hr.forEach((e) => e.style.color = "black");
         form.forEach((e) => e.style.backgroundColor = "");
         form.forEach((e) => e.style.borderColor = "");
+        form[form.length - 2].style.backgroundColor = "";
         formGroup.forEach((e) => e.style.backgroundColor = "");
       }
     });
@@ -79,6 +82,7 @@ $_404 = $_GET["404"] || null;
       document.body.style.backgroundColor = "#141719";
       form.forEach((e) => e.style.backgroundColor = "#737373");
       form.forEach((e) => e.style.borderColor = "#25272C");
+      form[form.length - 2].style.backgroundColor = "#545454";
       formGroup.forEach((e) => e.style.backgroundColor = "#545454");
     </script>
     <?php } else { ?>
@@ -91,6 +95,7 @@ $_404 = $_GET["404"] || null;
       document.body.style.backgroundColor = "white";
       form.forEach((e) => e.style.backgroundColor = "");
       form.forEach((e) => e.style.borderColor = "");
+      form[form.length - 2].style.backgroundColor = "";
       formGroup.forEach((e) => e.style.backgroundColor = "");
     </script>
     <?php } ?>
@@ -98,3 +103,4 @@ $_404 = $_GET["404"] || null;
   <script src="dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
