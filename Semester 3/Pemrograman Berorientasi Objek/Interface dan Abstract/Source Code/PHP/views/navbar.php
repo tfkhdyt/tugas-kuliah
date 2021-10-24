@@ -30,7 +30,7 @@ $abstract = $_GET["abstract"];
           <a class="nav-link" href="https://tfkhdyt.my.id/" target="_blank"><i class="fas fa-user"></i> About Me</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="https://github.com/tfkhdyt/tugas-kuliah/tree/main/Semester%203/Pemrograman%20Berorientasi%20Objek/Encapsulation/Source%20Code/PHP" target="_blank"><i class="fas fa-code"></i> Source Code</a>
+          <a class="nav-link" href="https://github.com/tfkhdyt/tugas-kuliah/tree/main/Semester%203/Pemrograman%20Berorientasi%20Objek/Interface%20dan%20Abstract/Source%20Code/PHP" target="_blank"><i class="fas fa-code"></i> Source Code</a>
         </li>
         <li class="nav-item">
           <div class="form-check form-switch mt-2">
