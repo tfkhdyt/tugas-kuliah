@@ -1,3 +1,4 @@
+// Taufik Hidayat | 301200032 | Informatika
 #include <iostream>
 using namespace std;
 
@@ -12,6 +13,7 @@ void cetakNama() { // function untuk menampilkan nama, nim, kelas, dan judul pro
     "Kelas         : IF Pagi\n"
     "Judul Program : Descending Bubble Sort\n"
   );
+  // Taufik Hidayat | 301200032 | Informatika
   cetakGaris(); // panggil function cetakGaris()
 }
 
@@ -27,6 +29,7 @@ void urutkanArray(int array[], int jumlahIndex) { // function untuk mengurutkan 
       if(array[j] > array[j-1]) { // apabila value array[j] lebih dari value array[j-1]
         tukar(&array[j], &array[j-1]); // panggil function tukar dengan argumen &array[j] dan &array[j-1]
       }
+      // Taufik Hidayat | 301200032 | Informatika
     }
   }
 }
@@ -42,6 +45,7 @@ int main() {
   int jumlahIndex, array[20]; // deklarasi variabel jumlahIndex dan array
   cetakNama(); // memanggil function cetakNama()
   printf("Masukkan jumlah index array (max 20) : "); // input jumlah index
+  // Taufik Hidayat | 301200032 | Informatika
   cin >> jumlahIndex;
   
   for (int i = 0; i < jumlahIndex; i++) { // input data array
