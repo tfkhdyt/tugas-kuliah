@@ -63,3 +63,4 @@ int main() {
   cetakArray(array, jumlahIndex);
   return 0; // untuk mengakhiri program
 }
+// Taufik Hidayat | 301200032 | Informatika
