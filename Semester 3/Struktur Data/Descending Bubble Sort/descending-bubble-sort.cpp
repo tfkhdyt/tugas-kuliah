@@ -1,8 +1,8 @@
 #include <iostream>
 using namespace std;
 
-void cetakGaris() {
-  printf("========================================\n");
+void cetakGaris() { // function untuk mencetak garis horizontal
+  printf("=========================================\n");
 }
 
 void cetakNama() { // function untuk menampilkan nama, nim, kelas, dan judul program
@@ -12,7 +12,7 @@ void cetakNama() { // function untuk menampilkan nama, nim, kelas, dan judul pro
     "Kelas         : IF Pagi\n"
     "Judul Program : Descending Bubble Sort\n"
   );
-  cetakGaris();
+  cetakGaris(); // panggil function cetakGaris()
 }
 
 void tukar(int *a, int *b) { // function untuk menukar 2 buah data
@@ -31,10 +31,10 @@ void urutkanArray(int array[], int jumlahIndex) { // function untuk mengurutkan 
   }
 }
 
-void cetakArray(int array[], int jumlahIndex) {
-  for (int i = 0; i < jumlahIndex; i++) {
-    printf("%d", array[i]);
-    if(i < jumlahIndex - 1) printf(", ");
+void cetakArray(int array[], int jumlahIndex) { // function untuk mencetak array
+  for (int i = 0; i < jumlahIndex; i++) { // lakukan perulangan for sebanyak jumlahIndex dengan nilai awal 0
+    printf("%d", array[i]); // cetak value dari index
+    if(i < jumlahIndex - 1) printf(", "); // cetak tanda koma untuk array
   }
 }
 
@@ -43,15 +43,19 @@ int main() {
   cetakNama(); // memanggil function cetakNama()
   printf("Masukkan jumlah index array (max 20) : "); // input jumlah index
   cin >> jumlahIndex;
+  
   for (int i = 0; i < jumlahIndex; i++) { // input data array
     printf("Masukkan data index ke-%d : ", i+1);
     cin >> array[i];
   }
-  cetakGaris();
-  printf("Array sebelum diurutkan:\n");
+  cetakGaris(); // panggil function cetakGaris()
+  
+  printf("Array sebelum diurutkan:\n"); // menampilkan array sebelum diurutkan
   cetakArray(array, jumlahIndex);
+  
   urutkanArray(array, jumlahIndex); // panggil function urutkanArray dengan argumen array dan jumlahIndex
-  printf("\nArray sesudah diurutkan:\n");
+  
+  printf("\nArray sesudah diurutkan:\n"); // menampilkan array sesudah diurutkan
   cetakArray(array, jumlahIndex);
-  return 0;
+  return 0; // untuk mengakhiri program
 }
