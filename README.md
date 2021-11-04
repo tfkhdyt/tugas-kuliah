@@ -34,6 +34,10 @@
       <td><b>Per. Tinggi</b></td>
       <td>Universitas Bale Bandung</td>
     </tr>
+    <tr>
+      <td><b>Angkatan</b></td>
+      <td>2020</td>
+    </tr>
   </table>
 </p>
 
