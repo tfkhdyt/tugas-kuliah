@@ -8,6 +8,7 @@
   <a href="https://t.me/tfkhdyt"><img height="30" src="https://upload.wikimedia.org/wikipedia/commons/8/83/Telegram_2019_Logo.svg"></a>&nbsp;
   <a href="https://www.linkedin.com/mwlite/in/taufik-hidayat-6793aa200"><img height="30" src="https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg"></a>
   <a href="https://pddikti.kemdikbud.go.id/data_mahasiswa/QUUyNzdEMjktNDk0Ri00RTlDLUE4NzgtNkUwRDBDRjIxOUNB"><img height="30" src="https://i.postimg.cc/YSB2c3DG/1619598282440.png"></a>
+  <a href="https://tfkhdyt.my.id/"><img height="31" src="https://www.svgrepo.com/show/295345/internet.svg"></a>&nbsp;
 </p>
 <p align=center>
   <table width="75%" align="center">
@@ -34,6 +35,10 @@
       <td><b>Per. Tinggi</b></td>
       <td>Universitas Bale Bandung</td>
     </tr>
+    <tr>
+      <td><b>Angkatan</b></td>
+      <td>2020</td>
+    </tr>
   </table>
 </p>
 
@@ -49,8 +54,8 @@
   - [Pemrograman Java Lanjutan](https://github.com/tfkhdyt/tugas-kuliah/tree/main/Semester%202/Pemrograman%20Java%20Lanjutan%20(Pak%20Yusuf)) | [**Download**](https://downgit.github.io/#/home?url=https://github.com/tfkhdyt/tugas-kuliah/tree/main/Semester%202/Pemrograman%20Java%20Lanjutan%20(Pak%20Yusuf))
   - [Praktikum Pengantar Pemrograman](https://github.com/tfkhdyt/tugas-kuliah/tree/main/Semester%202/Praktikum%20Pengantar%20Pemrograman%20(Pak%20Ojan)) | [**Download**](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tfkhdyt/tugas-kuliah/tree/main/Semester%202/Praktikum%20Pengantar%20Pemrograman%20(Pak%20Ojan))
 - [Semester 3](https://github.com/tfkhdyt/tugas-kuliah/tree/main/Semester%203) | [**Download**](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tfkhdyt/tugas-kuliah/tree/main/Semester%203)
-  - [Struktur Data](https://github.com/tfkhdyt/tugas-kuliah/tree/main/Semester%203/Struktur%20Data) | [**Download**](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tfkhdyt/tugas-kuliah/tree/main/Semester%203/Struktur%20Data)
   - [Pemrograman Berorientasi Objek](https://github.com/tfkhdyt/tugas-kuliah/tree/main/Semester%203/Pemrograman%20Berorientasi%20Objek) | [**Download**](https://downgit.github.io/#/home?url=https://github.com/tfkhdyt/tugas-kuliah/tree/main/Semester%203/Pemrograman%20Berorientasi%20Objek)
+  - [Struktur Data](https://github.com/tfkhdyt/tugas-kuliah/tree/main/Semester%203/Struktur%20Data) | [**Download**](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tfkhdyt/tugas-kuliah/tree/main/Semester%203/Struktur%20Data)
 
 ### Support
 Klik tombol di bawah untuk mendukung saya lewat donasi
