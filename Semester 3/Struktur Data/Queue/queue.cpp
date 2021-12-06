@@ -133,7 +133,7 @@ void printqueue2(queue q2) {
   }
 }
 
-void main() {
+int main() {
   // deklarasi variabel
   int teller, pil;
   char nama[20];
