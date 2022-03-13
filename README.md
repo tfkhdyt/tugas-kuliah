@@ -2,7 +2,7 @@
 <img src="https://i.postimg.cc/CLzRsx7Q/TKP-Banner.jpg" alt="banner">
 <p align=center>
   <a href="https://facebook.com/tfkhdyt142"><img height="30" src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"></a>&nbsp;
-  <a href="https://twitter.com/tfkhdyt"><img height="28" src="https://upload.wikimedia.org/wikipedia/en/6/60/Twitter_Logo_as_of_2021.svg"></a>&nbsp;
+  <a href="https://twitter.com/tfkhdyt"><img height="28" src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Twitter-logo.svg"></a>&nbsp;
   <a href="https://instagram.com/_tfkhdyt_"><img height="30" src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg"></a>&nbsp;
   <a href="https://youtube.com/tfkhdyt"><img height="30" src="https://upload.wikimedia.org/wikipedia/commons/a/a0/YouTube_social_red_circle_%282017%29.svg"></a>&nbsp;
   <a href="https://t.me/tfkhdyt"><img height="30" src="https://upload.wikimedia.org/wikipedia/commons/8/83/Telegram_2019_Logo.svg"></a>&nbsp;
@@ -57,6 +57,8 @@
   - [Bahasa Pemrograman Tingkat Rendah](https://github.com/tfkhdyt/tugas-kuliah/tree/main/Semester%203/Bahasa%20Pemrograman%20Tingkat%20Rendah) | [**Download**](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tfkhdyt/tugas-kuliah/tree/main/Semester%203/Bahasa%20Pemrograman%20Tingkat%20Rendah)
   - [Pemrograman Berorientasi Objek](https://github.com/tfkhdyt/tugas-kuliah/tree/main/Semester%203/Pemrograman%20Berorientasi%20Objek) | [**Download**](https://downgit.github.io/#/home?url=https://github.com/tfkhdyt/tugas-kuliah/tree/main/Semester%203/Pemrograman%20Berorientasi%20Objek)
   - [Struktur Data](https://github.com/tfkhdyt/tugas-kuliah/tree/main/Semester%203/Struktur%20Data) | [**Download**](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tfkhdyt/tugas-kuliah/tree/main/Semester%203/Struktur%20Data)
+- [Semester 4](https://github.com/tfkhdyt/tugas-kuliah/tree/main/Semester%204) | [**Download**](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tfkhdyt/tugas-kuliah/tree/main/Semester%204)
+  - [Grafika Komputer](https://github.com/tfkhdyt/tugas-kuliah/tree/main/Semester%204/Grafika%20Komputer) | [**Download**](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tfkhdyt/tugas-kuliah/tree/main/Semester%204/Grafika%20Komputer)
 
 ### Support
 Klik tombol di bawah untuk mendukung saya lewat donasi
