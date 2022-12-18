@@ -1,5 +1,5 @@
 program parser;
-uses CRT.scanner;
+uses CRT, scanner;
 
 var is_any_error: boolean;
 procedure exp_proc; forward;
@@ -49,6 +49,23 @@ begin
       exp_proc;
     end;
   end;
+end;
+
+procedure var_proc;
+begin
+  if token <> t_id
+    then error_reporting(3) 
+    else begin
+      scan;
+      if token <> t_lbrack
+        then begin
+          scan;
+          exp_proc;
+          if token <> t_rbrack
+            then error_reporting(4)
+            else scan;
+          end;
+      end;
 end;
 
 procedure exp_proc;
