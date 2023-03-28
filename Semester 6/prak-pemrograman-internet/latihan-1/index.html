@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title dari website</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <header>
+      <h1>Belajar HTML</h1>
+      <h2>Judul Heading 2 (h2)</h2>
+      <h3>Judul Heading 3 (h3)</h3>
+      <h4>Judul Heading 4 (h4)</h4>
+      <h5>Judul Heading 5 (h5)</h5>
+      <h6>Judul Heading 6 (h6)</h6>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <p align="left">1. Paragraf rata kiri</p>
+    <p align="right">2. Paragraf rata kanan</p>
+    <p align="center">3. Paragraf rata tengah</p>
+    <p align="justify">4. Paragraf rata kiri kanan</p>
+
+    <b>Text tebal</b><br />
+    <strong>Text strong</strong><br />
+    <i>Text italic</i><br />
+    <em>Text em</em><br />
+    <small>Text small</small><br />
+    <sub>Text sub</sub><br />
+    <sup>Text sup</sup><br />
+    <u>Text underline</u><br />
+    <ins>Text ins</ins><br />
+    <del>Text del</del><br />
+    <mark>Text mark</mark><br />
+    <marquee>Text marquee</marquee><br />
+    <iframe src="https://tfkhdyt.my.id" height="500px" width="50%"></iframe>
+    <br />
+
+    <!-- symbol -->
+    <a href="#">Simbol panah &#8594;</a><br />
+    <a href="#">Simbol panah &rarr;</a><br />
+    <p>
+      &#8704; | &forall; , &#8706; | &part; , &#8707; | &exist; , &#8709; |
+      &empty; , &#8711; | &nabla;
+    </p>
+    &#8712; | &isin; , &#8713; | &notin; , &#8715; | &ni; , &#8719; | &prod; ,
+    &#8721; | &sum; , &#913; | &Alpha; <br />
+    &#914; | &Beta; , &#915; | &Gamma; , &#916; | &Delta; , &#917; | &Epsilon; ,
+    &#918; | &Zeta; , &#169; | &copy; <br />
+    &#174; | &reg; , &#8364; | &euro; , &#8482; | &trade; , &#8592; | &larr; ,
+    &#8593; | &uarr; , &#8595; | &darr; <br />
+    &#9824; | &spades; , &#9827; | &clubs; , &#9829; | &hearts; , &#9830; |
+    &diams; <br />
+
+    <!-- tag link -->
+    <p>Saya ujian praktikum di <a href="https://unibba.ac.id">UNIBBA</a></p>
+    <p>Halaman HTML pertama saya adalah <a href="hello.html">Hello</a></p>
+    <p>
+      Saya sedang belajar html dari
+      <a href="https://unibba.ac.id" target="_blank">UNIBBA</a> dan akan terbuka
+      pada tab baru
+    </p>
+
+    <!-- tag image -->
+    <img src="assets/img/tfkhdyt.png" height="70px" width="70px" />
+    <img
+      src="assets/img/tfkhdyt-logo-with-black-bg.png"
+      height="30"
+      width="30"
+      alt="Logo"
+    />
+
+    <!-- tag list -->
+    <ul>
+      <li>HTML</li>
+      <li>PHP</li>
+    </ul>
+    <ol>
+      <li>HTML</li>
+      <li>PHP</li>
+    </ol>
+
+    <!-- tag div -->
+    <div class="kotak">Kotak 1</div>
+    <div id="kotak">Kotak 2</div>
+
+    <!-- tag table -->
+    <table border="1">
+      <tr>
+        <th>No</th>
+        <th>Nama</th>
+        <th>NPM</th>
+      </tr>
+      <tr>
+        <td>Baris 1 / Kolom 1</td>
+        <td>Baris 1 / Kolom 2</td>
+        <td>Baris 1 / Kolom 3</td>
+      </tr>
+      <tr>
+        <td>Baris 2 / Kolom 1</td>
+        <td>Baris 2 / Kolom 2</td>
+        <td>Baris 2 / Kolom 3</td>
+      </tr>
+      <tr>
+        <td>Baris 3 / Kolom 1</td>
+        <td>Baris 3 / Kolom 2</td>
+        <td>Baris 3 / Kolom 3</td>
+      </tr>
+    </table>
+    <br />
+
+    <!-- tag form -->
+    <form>
+      NPM:
+      <input type="number" name="npm" value="Npm" /> <br />
+      Nama:
+      <input type="text" name="nama" value="Nama kamu" /> <br />
+      Password:
+      <input type="password" name="pass" /> <br />
+      Jenis Kelamin:
+      <input type="radio" name="jenis_kelamin" value="laki-laki" checked />
+      Laki-laki
+      <input type="radio" name="jenis_kelamin" value="perempuan" checked />
+      Perempuan <br />
+      Alamat:
+      <input type="text" name="alamat" /> <br />
+      Bahasa pemrograman yang dikuasai:
+      <input type="checkbox" name="web" checked /> Web
+      <input type="checkbox" name="mobile" /> Mobile
+      <input type="checkbox" name="desktop" /> Desktop <br />
+      Asal kota:
+      <select>
+        <option value="Kota Jakarta">Jakarta</option>
+        <option value="Kota Bandung">Bandung</option>
+        <option value="Kota Semarang">Semarang</option>
+      </select>
+      <br />
+      Komentar Anda: <br />
+      <textarea rows="Komentar" cols="20" rows="5">
+Silakan isi di sini</textarea
+      >
+      <br />
+      <button type="submit">Mulai proses!</button>
+    </form>
+  </body>
+</html>
