@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Form e-KTP</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Form e-KTP</h1>
+      <hr />
+      <form>
+        <div class="container">
+          <!-- nik -->
+          <label for="nik">NIK</label>
+          <input type="number" name="nik" id="nik" />
+          <!-- nama -->
+          <label for="nama">Nama</label>
+          <input type="text" name="nama" id="nama" />
+          <!-- tempat lahir -->
+          <label for="tempatLahir">Tempat lahir</label>
+          <input type="text" name="tempatLahir" id="tempatLahir" />
+          <!-- tanggal lahir -->
+          <label for="tanggalLahir">Tanggal lahir</label>
+          <input type="date" name="tanggalLahir" id="tanggalLahir" />
+          <!-- jenis kelamin -->
+          <label for="jenisKelamin">Jenis kelamin</label>
+          <div>
+            <input type="radio" name="jenisKelamin" id="pria" />
+            <label for="pria">Pria</label>
+            <input type="radio" name="jenisKelamin" id="wanita" />
+            <label for="wanita">Wanita</label>
+          </div>
+          <!-- gol darah -->
+          <label for="golDarah">Gol. Darah</label>
+          <div>
+            <input type="radio" name="golDarah" id="a" />
+            <label for="a">A</label><br />
+            <input type="radio" name="golDarah" id="b" />
+            <label for="b">B</label><br />
+            <input type="radio" name="golDarah" id="ab" />
+            <label for="ab">AB</label><br />
+            <input type="radio" name="golDarah" id="o" />
+            <label for="o">O</label><br />
+          </div>
+          <!-- alamat -->
+          <label for="alamat">Alamat</label>
+          <input type="text" name="alamat" id="alamat" />
+          <!-- rt -->
+          <label for="rt">RT</label>
+          <input type="number" name="rt" id="rt" />
+          <!-- rw -->
+          <label for="rw">RW</label>
+          <input type="number" name="rw" id="rw" />
+          <!-- Kel/Desa -->
+          <label for="desa">Kel/Desa</label>
+          <input type="text" name="desa" id="desa" />
+          <!-- Kecamatan -->
+          <label for="kecamatan">Kecamatan</label>
+          <input type="text" name="kecamatan" id="kecamatan" />
+          <!-- agama -->
+          <label for="agama">Agama</label>
+          <select name="agama" id="agama">
+            <option value="islam">Islam</option>
+            <option value="kristen">Kristen</option>
+            <option value="katolik">Katolik</option>
+            <option value="hindu">Hindu</option>
+            <option value="buddha">Buddha</option>
+            <option value="konghucu">Konghucu</option>
+          </select>
+          <!-- statusKawin -->
+          <label for="statusKawin">Status Perkawinan</label>
+          <div>
+            <input type="radio" name="statusKawin" id="kawin" />
+            <label for="kawin">Kawin</label>
+            <input type="radio" name="statusKawin" id="belumKawin" />
+            <label for="belumKawin">Belum Kawin</label>
+          </div>
+          <!-- pekerjaan -->
+          <label for="pekerjaan">Pekerjaan</label>
+          <input type="text" name="pekerjaan" id="pekerjaan" />
+          <!-- kewarganegaraan -->
+          <label for="kewarganegaraan">Kewarganegaraan</label>
+          <div>
+            <input type="radio" name="kewarganegaraan" id="wni" />
+            <label for="wni">WNI</label>
+            <input type="radio" name="kewarganegaraan" id="asing" />
+            <label for="asing">Asing</label>
+          </div>
+          <!-- foto -->
+          <label for="foto">Foto</label>
+          <input type="file" name="foto" id="foto" />
+          <!-- Berlaku hingga -->
+          <label for="berlakuHingga">Berlaku hingga</label>
+          <input
+            type="text"
+            name="berlakuHingga"
+            id="berlakuHingga"
+            value="Seumur Hidup"
+            disabled
+          />
+        </div>
+        <hr />
+        <div class="buttons">
+          <button type="submit">Kirim</button>
+          <button type="reset">Reset</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>

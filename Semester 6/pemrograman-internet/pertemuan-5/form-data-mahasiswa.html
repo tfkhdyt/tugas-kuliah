@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Form Data Mahasiswa</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Form Data Mahasiswa</h1>
+      <hr />
+      <form>
+        <div class="container">
+          <!-- nama -->
+          <label for="nama">Nama anda</label>
+          <input type="text" name="nama" id="nama" />
+          <!-- jenis kelamin -->
+          <label for="jenisKelamin">Jenis kelamin</label>
+          <div>
+            <input type="radio" name="jenisKelamin" id="pria" />
+            <label for="pria">Pria</label>
+            <input type="radio" name="jenisKelamin" id="wanita" />
+            <label for="wanita">Wanita</label>
+          </div>
+          <!-- hobi -->
+          <label for="hobi">Hobi</label>
+          <div>
+            <input type="checkbox" name="hobi" id="musik" value="musik" />
+            <label for="musik">Musik</label><br />
+            <input type="checkbox" name="hobi" id="jalan" value="jalan" />
+            <label for="jalan">Jalan</label><br />
+            <input type="checkbox" name="hobi" id="baca" value="baca" />
+            <label for="baca">Baca</label><br />
+          </div>
+          <!-- agama -->
+          <label for="agama">Agama</label>
+          <select name="agama" id="agama">
+            <option value="islam">Islam</option>
+            <option value="kristen">Kristen</option>
+            <option value="katolik">Katolik</option>
+            <option value="hindu">Hindu</option>
+            <option value="buddha">Buddha</option>
+            <option value="konghucu">Konghucu</option>
+          </select>
+          <!-- asal sekolah -->
+          <label for="asalSekolah">Asal sekolah</label>
+          <input type="text" name="asalSekolah" id="asalSekolah" />
+          <!-- keterangan -->
+          <label for="keterangan">Keterangan</label>
+          <textarea rows="5" id="keterangan"></textarea>
+        </div>
+        <hr />
+        <div class="buttons">
+          <button type="submit">Kirim</button>
+          <button type="reset">Reset</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
