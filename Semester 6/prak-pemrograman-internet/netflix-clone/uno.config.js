@@ -12,6 +12,20 @@ export default defineConfig({
 						name: 'Montserrat',
 						weights: ['400', '500', '600', '700'],
 					},
+					{
+						name: 'sans-serif',
+						provider: 'none',
+					},
+				],
+				volkhov: [
+					{
+						name: 'Volkhov',
+						weights: ['700'],
+					},
+					{
+						name: 'serif',
+						provider: 'none',
+					},
 				],
 			},
 		}),
