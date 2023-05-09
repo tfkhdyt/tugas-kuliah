@@ -1,0 +1,720 @@
+<!-- 
+  Design by: Muhammad Fauzan Alkhairi
+  https://codedesign.dev/challenge/clone-netflix
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="Watch Netflix movies & TV shows online or stream right to your smart TV, game console, PC, Mac, mobile, tablet and more."
+		/>
+		<title>Netflix Indonesia - Watch TV Shows Online, Watch Movies Online</title>
+		<link rel="shortcut icon" href="assets/favicon-abe8012e.ico" />
+
+		<script type="module" crossorigin src="assets/index-c8aa8b18.js"></script>
+		<link rel="stylesheet" href="assets/index-ccfd5854.css" />
+	</head>
+	<body bg="#1a1c22" font="montserrat">
+		<!-- header -->
+		<header
+			lg:container
+			p="y-10 x-8 md:x-16"
+			space="y-6 md:y-8 "
+			m="x-auto"
+			x-data="{ isOpen: false }"
+			items="center"
+		>
+			<nav flex justify="between" items="center">
+				<div basis="md:1/3">
+					<img src="assets/netflix_logo-26eb2cf1.svg" alt="Netflix logo" h="6" />
+				</div>
+				<div
+					hidden
+					md:flex
+					justify="center"
+					items="center"
+					space="x-6"
+					font="medium"
+					text="center"
+					basis="1/3"
+				>
+					<a href="#" text="#FEF4F4">Movies</a>
+					<a href="#" text="#FEF4F4">TV Shows</a>
+					<a href="#" text="#FEF4F4">New & Popular</a>
+				</div>
+				<div hidden md:flex justify="end" items="center" space="x-4" basis="md:1/3">
+					<select bg="transparent" text="#FEF4F4" font="medium">
+						<option value="id">ID</option>
+						<option value="en">EN</option>
+					</select>
+					<button
+						bg="gradient-to-r"
+						from="#BC0E19"
+						to="#DB202C"
+						text="#FEF4F4"
+						p="y-2 x-6"
+						rounded="xl"
+						shadow="md #DB202C"
+						font="semibold"
+					>
+						Masuk
+					</button>
+				</div>
+				<button
+					invert
+					md:hidden
+					:class="isOpen ?'hamburger hamburger--squeeze is-active' : 'hamburger hamburger--squeze'"
+					type="button"
+					@click="isOpen = !isOpen"
+					p="0"
+					scale="75"
+					aria-label="Menu"
+				>
+					<span class="hamburger-box">
+						<span class="hamburger-inner"></span>
+					</span>
+				</button>
+			</nav>
+			<div x-show="isOpen" flex="~ col" md:hidden space="y-4" items="start">
+				<a href="#" text="#FEF4F4">Movies</a>
+				<a href="#" text="#FEF4F4">TV Shows</a>
+				<a href="#" text="#FEF4F4">New & Popular</a>
+				<select bg="transparent" text="#FEF4F4" font="medium">
+					<option value="id">ID</option>
+					<option value="en">EN</option>
+				</select>
+				<button
+					bg="gradient-to-r"
+					from="#BC0E19"
+					to="#DB202C"
+					text="#FEF4F4"
+					p="y-2 x-6"
+					rounded="xl"
+					shadow="md #DB202C"
+					font="semibold"
+				>
+					Masuk
+				</button>
+			</div>
+		</header>
+		<!-- hero -->
+		<section
+			lg:container
+			flex="~ col md:row"
+			m="x-auto"
+			p="x-8 md:x-16"
+			gap="16 md:4"
+			items="center"
+		>
+			<div text="#FEF4F4" basis="3/6">
+				<h1
+					font="volkhov"
+					font="bold"
+					text="3xl lg:5xl xl:6xl"
+					leading="relaxed md:relaxed lg:relaxed xl:relaxed"
+					max-w="xl"
+				>
+					Nikmati Tontonan Dimana Saja, dan Kapan Saja
+				</h1>
+				<p leading="8" m="t-4" text="#E3E1E1">
+					Tonton apa saja secara online dari komputer pribadi atau di perangkat yang terhubung ke
+					Internet dan mendukung aplikasi Netflix, dan gunakan download untuk menonton saat kamu di
+					perjalanan dan tidak punya koneksi Internet.
+				</p>
+				<button
+					bg="gradient-to-r"
+					from="#BC0E19"
+					to="#DB202C"
+					text="#FEF4F4"
+					p="y-2 x-6"
+					rounded="xl"
+					shadow="md #DB202C"
+					font="semibold"
+					m="t-6"
+				>
+					Daftar Sekarang
+				</button>
+			</div>
+			<div basis="3/6">
+				<img src="assets/Img-hero-9809dcd7.webp" alt="Hero image" width="95%" m="md:l-auto" />
+			</div>
+		</section>
+		<!-- features -->
+		<section lg:container m="x-auto y-16 t-20 md:t-40" p="x-8 md:x-16" space="y-8">
+			<div>
+				<h2
+					font="volkhov"
+					font="bold"
+					max-w="md"
+					m="x-auto"
+					leading="relaxed md:relaxed lg:relaxed xl:relaxed"
+					text="#FEF4F4 2xl md:3xl xl:4xl center"
+				>
+					Layanan Terbaik yang Tidak Mengecewakan
+				</h2>
+			</div>
+			<div grid="~ cols-1 md:cols-2 xl:cols-4" gap="10">
+				<div
+					bg="#1F2127 hover:#26282D"
+					rounded="3xl"
+					p="7"
+					flex="~ col"
+					space="y-3"
+					items="start"
+					transition
+					duration="500"
+				>
+					<img src="assets/fluent_tv-24-regular-bab751c2.svg" h="16" alt="TV" />
+					<h3 text="#FEF4F4 lg" font="medium">Tonton langsung di TV</h3>
+					<p text="#E3E0E0 sm" font="light" leading="7">
+						Tonton di Smart TV, Playstation, Xbox, Chromecast, Apple TV, pemutar Blu-ray, dan banyak
+						lagi
+					</p>
+				</div>
+				<div
+					bg="#1F2127 hover:#26282D"
+					rounded="3xl"
+					p="7"
+					flex="~ col"
+					space="y-3"
+					items="start"
+					transition
+					duration="500"
+				>
+					<img src="assets/fluent_phone-tablet-20-regular-500c7be1.svg" h="16" alt="Offline" />
+					<h3 text="#FEF4F4 lg" font="medium">Download untuk offline</h3>
+					<p text="#E3E0E0 sm" font="light" leading="7">
+						Simpan dengan mudah agar selalu ada acara TV dan film yang bisa ditonton
+					</p>
+				</div>
+				<div
+					bg="#1F2127 hover:#26282D"
+					rounded="3xl"
+					p="7"
+					flex="~ col"
+					space="y-3"
+					items="start"
+					transition
+					duration="500"
+				>
+					<img src="assets/gridicons_share-computer-38dd00dd.svg" h="16" alt="Share" />
+					<h3 text="#FEF4F4 lg" font="medium">Akses berbagai perangkat</h3>
+					<p text="#E3E0E0 sm" font="light" leading="7">
+						Streaming film dan acara TV tak terbatas di ponsel, tablet, laptop, dan TV-mu
+					</p>
+				</div>
+				<div
+					bg="#1F2127 hover:#26282D"
+					rounded="3xl"
+					p="7"
+					flex="~ col"
+					space="y-3"
+					items="start"
+					transition
+					duration="500"
+				>
+					<img src="assets/cil_child-40070a59.svg" h="16" alt="Child" />
+					<h3 text="#FEF4F4 lg" font="medium">Buat profil untuk anak</h3>
+					<p text="#E3E0E0 sm" font="light" leading="7">
+						Profil anak dilengkapi kontrol orang tua yang dilindungi PIN sehingga kamu bisa
+						membatasi rating usia konten yang bisa ditonton anak
+					</p>
+				</div>
+			</div>
+		</section>
+		<!-- section 3 -->
+		<section
+			flex="~ col-reverse md:row"
+			lg:container
+			m="x-auto y-24"
+			p="x-8 md:x-16"
+			gap="4"
+			items="center"
+		>
+			<div basis="60% xl:55%">
+				<img src="assets/tv-7bbc9fdd.webp" w="full" alt="TV" />
+			</div>
+			<div basis="40% xl:35%">
+				<h2
+					font="volkhov"
+					font="bold"
+					m="x-auto"
+					leading="relaxed md:relaxed lg:relaxed xl:relaxed"
+					text="#FEF4F4 2xl md:3xl xl:4xl"
+				>
+					Tonton Film, Acara TV Tak Terbatas, dan Lebih Banyak Lagi
+				</h2>
+			</div>
+		</section>
+		<!-- popular -->
+		<section lg:container m="x-auto y-24" p="x-8 md:x-16" space="y-8">
+			<div flex="~ col md:row" items="start md:end" justify="between" gap="4">
+				<h2
+					font="volkhov"
+					font="bold"
+					leading="relaxed md:relaxed lg:relaxed xl:relaxed"
+					text="#FEF4F4 2xl md:3xl xl:4xl"
+					max-w="md:md"
+				>
+					Film dan Acara TV Populer Bulan Ini
+				</h2>
+				<button
+					bg="gradient-to-r"
+					from="#BC0E19"
+					to="#DB202C"
+					text="#FEF4F4"
+					p="y-2 x-6"
+					rounded="xl"
+					shadow="md #DB202C"
+					font="semibold"
+				>
+					Lihat Semua
+				</button>
+			</div>
+			<div grid="~ cols-1 md:cols-2 xl:cols-4" gap="10">
+				<div
+					bg="#1F2127 hover:#26282D"
+					rounded="3xl"
+					p="7"
+					flex="~ col"
+					space="y-5"
+					justify="start"
+					border="~ #FEF4F4"
+					shadow="hover:xl #40434E/25"
+					transition
+					duration="500"
+				>
+					<img
+						src="assets/breaking-bad-169c3e56.webp"
+						w="full"
+						alt="Breaking Bad"
+						rounded="2xl"
+						aspect="242/155"
+						object="cover"
+					/>
+					<div space="y-3">
+						<h3 text="#FEF4F4 lg" font="medium">Breaking Bad</h3>
+						<h3 text="#FEF4F4">Crime, Drama, Thriller</h3>
+						<span flex font="light" items="center" text="#E3E0E0" space="x-1.5">
+							<img src="assets/star-3b05ab86.svg" h="6" alt="Star" />
+							<p>9.5/10 IMDb</p>
+						</span>
+					</div>
+				</div>
+				<div
+					bg="#1F2127 hover:#26282D"
+					rounded="3xl"
+					p="7"
+					flex="~ col"
+					space="y-5"
+					justify="start"
+					border="~ #FEF4F4"
+					shadow="hover:xl #40434E/25"
+					transition
+					duration="500"
+				>
+					<img
+						src="assets/daredevil-5d4912dc.webp"
+						w="full"
+						alt="Daredevil"
+						rounded="2xl"
+						aspect="242/155"
+						object="cover"
+					/>
+					<div space="y-3">
+						<h3 text="#FEF4F4 lg" font="medium">Daredevil</h3>
+						<h3 text="#FEF4F4">Action, Crime, Drama</h3>
+						<span flex font="light" items="center" text="#E3E0E0" space="x-1.5">
+							<img src="assets/star-3b05ab86.svg" h="6" alt="Star" />
+							<p>8.6/10 IMDb</p>
+						</span>
+					</div>
+				</div>
+				<div
+					bg="#1F2127 hover:#26282D"
+					rounded="3xl"
+					p="7"
+					flex="~ col"
+					space="y-5"
+					justify="start"
+					border="~ #FEF4F4"
+					shadow="hover:xl #40434E/25"
+					transition
+					duration="500"
+				>
+					<img
+						src="assets/scott-pilgrim-267764e3.webp"
+						w="full"
+						alt="Scott Pilgrim"
+						rounded="2xl"
+						aspect="242/155"
+						object="cover"
+					/>
+					<div space="y-3">
+						<h3 text="#FEF4F4 lg" font="medium">Scott Pilgrim vs. the World</h3>
+						<h3 text="#FEF4F4">Action, Comedy, Fantasy</h3>
+						<span flex font="light" items="center" text="#E3E0E0" space="x-1.5">
+							<img src="assets/star-3b05ab86.svg" h="6" alt="Star" />
+							<p>7.5/10 IMDb</p>
+						</span>
+					</div>
+				</div>
+				<div
+					bg="#1F2127 hover:#26282D"
+					rounded="3xl"
+					p="7"
+					flex="~ col"
+					space="y-5"
+					justify="start"
+					border="~ #FEF4F4"
+					shadow="hover:xl #40434E/25"
+					transition
+					duration="500"
+				>
+					<img
+						src="assets/drive-60e17c1e.webp"
+						w="full"
+						alt="Drive"
+						rounded="2xl"
+						aspect="242/155"
+						object="cover"
+					/>
+					<div space="y-3">
+						<h3 text="#FEF4F4 lg" font="medium">Drive</h3>
+						<h3 text="#FEF4F4">Action, Drama</h3>
+						<span flex font="light" items="center" text="#E3E0E0" space="x-1.5">
+							<img src="assets/star-3b05ab86.svg" h="6" alt="Star" />
+							<p>7.8/10 IMDb</p>
+						</span>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- pricing -->
+		<section lg:container m="x-auto y-24 md:y-48" p="x-8 md:x-16" space="y-8">
+			<div>
+				<h2
+					font="volkhov"
+					font="bold"
+					max-w="md"
+					m="x-auto"
+					leading="relaxed md:relaxed lg:relaxed xl:relaxed"
+					text="#FEF4F4 2xl md:3xl xl:4xl center"
+				>
+					Pilih Paket yang Cocok Untukmu
+				</h2>
+			</div>
+			<div grid="~ cols-1 lg:cols-3" gap="10">
+				<div bg="#1F2127" rounded="3xl" text="center" p="y-8 x-6">
+					<h3 text="#FEF4F4 xl" font="semibold">Basic</h3>
+					<div text="#DB202C 3xl" font="semibold" m="y-6">
+						Rp 120,000<span text="#FEF4F4 sm" font="normal">/bulan</span>
+					</div>
+					<div text="#FEF4F4 left" space="y-3.5">
+						<div flex space="x-2" items="start">
+							<img src="assets/cheklist-73fb6f46.svg" alt="checklist" />
+							<p>Ponsel, Tablet, Komputer, TV</p>
+						</div>
+						<div flex space="x-2" items="start">
+							<img src="assets/cheklist-73fb6f46.svg" alt="checklist" />
+							<p>No Ads</p>
+						</div>
+						<div flex space="x-2">
+							<img src="assets/cheklist-73fb6f46.svg" alt="checklist" />
+							<p>Batalkan Kapan Saja</p>
+						</div>
+						<div flex space="x-2">
+							<img src="assets/cheklist-73fb6f46.svg" alt="checklist" />
+							<p>Kualitas Video Baik</p>
+						</div>
+						<div flex space="x-2">
+							<img src="assets/cheklist-73fb6f46.svg" alt="checklist" />
+							<p>Resolusi 480p</p>
+						</div>
+						<div>
+							<p text="#ABACAF" font="light" m="l-8">Resolusi 720p</p>
+						</div>
+						<div>
+							<p text="#ABACAF" font="light" m="l-8">Resolusi 1080p</p>
+						</div>
+						<div>
+							<p text="#ABACAF" font="light" m="l-8">Resolusi 4K+HDR</p>
+						</div>
+					</div>
+					<button
+						bg="transparent"
+						text="#FEF4F4"
+						p="y-2 x-6"
+						rounded="xl"
+						font="semibold"
+						m="t-12"
+						border="~ #FEF4F4"
+					>
+						Pilih Paket
+					</button>
+				</div>
+				<div rounded="3xl" text="center" p="y-8 x-6" border="~ #FEF4F4" class="card-gradient">
+					<h3 text="#FEF4F4 xl" font="semibold">Standard</h3>
+					<div text="#DB202C 3xl" font="semibold" m="y-6">
+						Rp 153,000<span text="#FEF4F4 sm" font="normal">/bulan</span>
+					</div>
+					<div text="#FEF4F4 left" space="y-3.5">
+						<div flex space="x-2" items="start">
+							<img src="assets/cheklist-73fb6f46.svg" alt="checklist" />
+							<p>Ponsel, Tablet, Komputer, TV</p>
+						</div>
+						<div flex space="x-2" items="start">
+							<img src="assets/cheklist-73fb6f46.svg" alt="checklist" />
+							<p>No Ads</p>
+						</div>
+						<div flex space="x-2">
+							<img src="assets/cheklist-73fb6f46.svg" alt="checklist" />
+							<p>Batalkan Kapan Saja</p>
+						</div>
+						<div flex space="x-2">
+							<img src="assets/cheklist-73fb6f46.svg" alt="checklist" />
+							<p>Kualitas Video Baik</p>
+						</div>
+						<div flex space="x-2">
+							<img src="assets/cheklist-73fb6f46.svg" alt="checklist" />
+							<p>Resolusi 480p</p>
+						</div>
+						<div flex space="x-2">
+							<img src="assets/cheklist-73fb6f46.svg" alt="checklist" />
+							<p>Resolusi 720p</p>
+						</div>
+						<div flex space="x-2">
+							<img src="assets/cheklist-73fb6f46.svg" alt="checklist" />
+							<p>Resolusi 1080p</p>
+						</div>
+						<div>
+							<p text="#ABACAF" font="light" m="l-8">Resolusi 4K+HDR</p>
+						</div>
+					</div>
+					<button
+						bg="gradient-to-r"
+						from="#BC0E19"
+						to="#DB202C"
+						text="#FEF4F4"
+						p="y-2 x-6"
+						rounded="xl"
+						shadow="md #DB202C"
+						font="semibold"
+						m="t-12"
+					>
+						Pilih Paket
+					</button>
+				</div>
+				<div bg="#1F2127" rounded="3xl" text="center" p="y-8 x-6">
+					<h3 text="#FEF4F4 xl" font="semibold">Premium</h3>
+					<div text="#DB202C 3xl" font="semibold" m="y-6">
+						Rp 186,000<span text="#FEF4F4 sm" font="normal">/bulan</span>
+					</div>
+					<div text="#FEF4F4 left" space="y-3.5">
+						<div flex space="x-2" items="start">
+							<img src="assets/cheklist-73fb6f46.svg" alt="checklist" />
+							<p>Ponsel, Tablet, Komputer, TV</p>
+						</div>
+						<div flex space="x-2" items="start">
+							<img src="assets/cheklist-73fb6f46.svg" alt="checklist" />
+							<p>No Ads</p>
+						</div>
+						<div flex space="x-2">
+							<img src="assets/cheklist-73fb6f46.svg" alt="checklist" />
+							<p>Batalkan Kapan Saja</p>
+						</div>
+						<div flex space="x-2">
+							<img src="assets/cheklist-73fb6f46.svg" alt="checklist" />
+							<p>Kualitas Video Baik</p>
+						</div>
+						<div flex space="x-2">
+							<img src="assets/cheklist-73fb6f46.svg" alt="checklist" />
+							<p>Resolusi 480p</p>
+						</div>
+						<div flex space="x-2">
+							<img src="assets/cheklist-73fb6f46.svg" alt="checklist" />
+							<p>Resolusi 720p</p>
+						</div>
+						<div flex space="x-2">
+							<img src="assets/cheklist-73fb6f46.svg" alt="checklist" />
+							<p>Resolusi 1080p</p>
+						</div>
+						<div flex space="x-2">
+							<img src="assets/cheklist-73fb6f46.svg" alt="checklist" />
+							<p>Resolusi 4K+HDR</p>
+						</div>
+					</div>
+					<button
+						bg="transparent"
+						text="#FEF4F4"
+						p="y-2 x-6"
+						rounded="xl"
+						font="semibold"
+						m="t-12"
+						border="~ #FEF4F4"
+					>
+						Pilih Paket
+					</button>
+				</div>
+			</div>
+		</section>
+		<!-- subscription -->
+		<section lg:container m="x-auto y-10 md:y-48" p="x-8 md:x-16">
+			<div bg="#C8CFEC" rounded="3xl" p="x-6 y-12" relative>
+				<div
+					bg="#5F7ADB"
+					p="2.5 t-3 r-3"
+					w="fit"
+					rounded="full"
+					border="5 #1a1c22"
+					absolute
+					top="-2.5"
+					right="-2.5"
+				>
+					<img src="assets/airplane-59b34e2f.svg" h="6" alt="airplane" />
+				</div>
+				<p text="#1A1C22 xl center" font="semibold" max-w="md:2xl" m="x-auto" leading="relaxed">
+					Berlangganan Untuk Mendapatkan Informasi Terbaru dan Menjadi Anggota Kami
+				</p>
+				<div flex="~ col md:row" justify="center" gap="4 md:6" m="t-6">
+					<input
+						type="email"
+						name="email"
+						placeholder="Enter Your Email"
+						p="x-4 y-3"
+						rounded="xl"
+						w="full"
+						max-w="lg:354px"
+						outline="none"
+						border="none"
+						ring="focus:2 #BC0E19"
+						transition
+						duration="500"
+						text="sm #1A1C22 placeholder:#1A1C22"
+					/>
+					<button
+						bg="gradient-to-r"
+						from="#BC0E19"
+						to="#DB202C"
+						text="#FEF4F4"
+						p="y-2 x-6"
+						rounded="xl"
+						shadow="md #DB202C"
+						font="semibold"
+						w="fit"
+					>
+						Berlangganan
+					</button>
+				</div>
+			</div>
+		</section>
+		<!-- footer -->
+		<footer lg:container m="x-auto t-24 md:t-48 b-10" p="x-8 md:x-16" space="y-12">
+			<div grid="~ cols-1 md:cols-2 lg:cols-4" gap="12 lg:20">
+				<div space="y-4">
+					<img src="assets/netflix_logo-26eb2cf1.svg" h="9" alt="Netflix" />
+					<p text="#E3E0E0 sm" font="light" leading="relaxed">
+						Layanan streaming tanpa iklan dan harga bulanan yang murah
+					</p>
+				</div>
+				<div flex="~ wrap" justify="xl:between" gap="12 lg:14" col="lg:span-2">
+					<div>
+						<h4 text="#FEF4F4 lg" font="medium">Perusahaan</h4>
+						<ul space="y-3" text="#E3E0E0" m="t-4">
+							<li><a href="https://tfkhdyt.my.id" target="_blank">Tentang Kami</a></li>
+							<li><a href="https://tfkhdyt.my.id/contact" target="_blank">Hubungi Kami</a></li>
+							<li><a href="https://jobs.netflix.com/jobs">Karir</a></li>
+							<li><a href="#">Blog</a></li>
+							<li><a href="http://ir.netflix.com/">Investors Relations</a></li>
+						</ul>
+					</div>
+					<div>
+						<h4 text="#FEF4F4 lg" font="medium">Dapatkan Bantuan</h4>
+						<ul space="y-3" text="#E3E0E0" m="t-4">
+							<li><a href="https://help.netflix.com/support/412">FAQ</a></li>
+							<li><a href="https://help.netflix.com/">Pusat Bantuan</a></li>
+							<li><a href="https://www.netflix.com/youraccount">Akun</a></li>
+						</ul>
+					</div>
+					<div>
+						<h4 text="#FEF4F4 lg" font="medium">Lainnya</h4>
+						<ul space="y-3" text="#E3E0E0" m="t-4">
+							<li><a href="https://www.netflix.com/redeem">Tukar Kartu Hadiah</a></li>
+							<li>
+								<a href="https://www.netflix.com/id-en/browse/genre/839338">Netflix Originals</a>
+							</li>
+							<li><a href="https://media.netflix.com/">Media Center</a></li>
+						</ul>
+					</div>
+				</div>
+				<div>
+					<h4 text="#FEF4F4 lg" font="medium">Dapatkan Aplikasi Kami</h4>
+					<div flex space="x-4" m="t-5 b-8">
+						<a href="https://apps.apple.com/us/app/netflix/id363590051/" target="_blank">
+							<img src="assets/app-store-c8e381c2.svg" w="32" alt="App store" />
+						</a>
+						<a
+							href="https://play.google.com/store/apps/details?id=com.netflix.mediaclient"
+							target="_blank"
+						>
+							<img src="assets/google-play-673cb04f.svg" w="32" alt="Google play" />
+						</a>
+					</div>
+					<div flex gap="4.5" max-w="xs">
+						<a href="https://www.facebook.com/tfkhdyt142/" target="_blank">
+							<button
+								rounded="full"
+								p="3"
+								shadow="md #40434E/20"
+								bg="hover:gradient-to-br"
+								from="#BC0E19"
+								to="#DB202C"
+							>
+								<img src="assets/bx_bxl-facebook-5544a355.svg" alt="Facebook" />
+							</button>
+						</a>
+						<a href="https://www.instagram.com/netflixid/">
+							<button
+								rounded="full"
+								p="3"
+								shadow="md #40434E/20"
+								bg="hover:gradient-to-br"
+								from="#BC0E19"
+								to="#DB202C"
+							>
+								<img src="assets/akar-icons_instagram-fill-550a445c.svg" alt="Instagram" />
+							</button>
+						</a>
+						<a href="https://twitter.com/netflixid">
+							<button
+								rounded="full"
+								p="3"
+								shadow="md #40434E/20"
+								bg="hover:gradient-to-br"
+								from="#BC0E19"
+								to="#DB202C"
+							>
+								<img src="assets/akar-icons_twitter-fill-266051b1.svg" alt="Twitter" />
+							</button>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div flex="~ col md:row" justify="between" gap="4">
+				<p text="#FFFFFF sm" font="light">© 2023 Hak Cipta Terpelihara oleh Netflix Indonesia</p>
+				<div space="x-6">
+					<a href="https://help.netflix.com/legal/termsofuse" text="#FFFFFF sm" font="light"
+						>Persyaratan Layanan</a
+					>
+					<a href="https://help.netflix.com/legal/privacy" text="#FFFFFF sm" font="light"
+						>Kebijakan Privasi</a
+					>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
