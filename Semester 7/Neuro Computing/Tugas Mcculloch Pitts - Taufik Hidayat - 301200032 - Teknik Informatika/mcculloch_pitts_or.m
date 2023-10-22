@@ -1,7 +1,7 @@
 function y = mcculloch_pitts_or(x1, x2)
   weight = 1;
+  net = sum([x1 x2] .* weight);
   threshold = 1;
-  net = x1 * weight + x2 * weight;
 
   if net >= threshold
     y = 1;
